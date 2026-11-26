@@ -14,6 +14,6 @@ Good to know
 - Carts, bookings, forms and payments inside the demos are simulated. Nothing is sent or charged.
 - The "Customise this template" button opens a WhatsApp message to Finesse Digital Innovations.
 
-Website: https://finessedigitalinnovations-domain.github.io/Website-Design
+Website: https://finessedigitalinnovations-domain.github.io/.com
 WhatsApp: +234 813 349 0442
 Email: finessedigitalinnovations@gmail.com
