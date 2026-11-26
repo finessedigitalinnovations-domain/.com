@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>A10 · IT Solutions & Managed Services Template — NexaCore</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f5f6ff;--sf:#fff;--alt:#e9ebff;--tx:#12143a;--mu:#5a5f8c;--bd:#d9dcf5;--in:#4338ca;--bl:#2563eb;--cy:#06b6d4;--gn:#10b981;--am:#f59e0b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a0b1f;--sf:#12143a;--alt:#0e1030;--tx:#e8eaff;--mu:#9399c7;--bd:#252a5e;--in:#818cf8;--bl:#60a5fa;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:120px}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif}
+a{color:inherit;text-decoration:none}.w{max-width:1070px;margin:auto;padding:0 18px}.mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+.ban{background:linear-gradient(90deg,var(--in),var(--bl),var(--cy));color:#fff;font-size:12px;font-weight:600;padding:7px 12px;text-align:center}.ban a{text-decoration:underline;cursor:pointer}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);z-index:10}
+nav .w{display:flex;align-items:center;justify-content:space-between;min-height:62px;padding-block:8px;gap:8px 10px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:20px;white-space:nowrap;line-height:1.2;display:flex;align-items:center;gap:8px}.lm{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--in),var(--cy));display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px}
+.links{display:flex;gap:2px;overflow-x:auto}.links a{padding:8px 12px;border-radius:8px;font-size:14px;font-weight:600;color:var(--mu);white-space:nowrap}.links a.on{background:var(--alt);color:var(--in)}
+.btn{display:inline-block;border:0;border-radius:10px;padding:12px 20px;font:inherit;font-weight:700;font-size:15px;cursor:pointer;background:linear-gradient(135deg,var(--in),var(--bl));color:#fff;box-shadow:0 8px 20px -10px var(--in)}.btn.g{background:transparent;color:var(--tx);box-shadow:0 0 0 1px var(--bd) inset}
+.hero{position:relative;overflow:hidden;padding:56px 0 50px;background:linear-gradient(135deg,#1e1b6b,#3730a3 55%,#2563eb);color:#fff}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:38px 38px;mask-image:radial-gradient(ellipse at 70% 40%,#000,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000,transparent 70%)}
+.hero .w{position:relative}.hero .g2{align-items:center}.hero h1{font-size:clamp(33px,6.5vw,58px);line-height:1.06;margin:10px 0 14px;letter-spacing:-1.5px}.hero h1 em{font-style:normal;background:linear-gradient(90deg,#67e8f9,#a5b4fc);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:500px;color:#c7ccf5;margin:0 0 22px}.pill{display:inline-block;background:rgba(255,255,255,.14);padding:5px 12px;border-radius:99px;font-size:12.5px;font-weight:600}
+.sys{background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:16px;color:#fff}.sys .h{display:flex;justify-content:space-between;font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.sr{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid rgba(255,255,255,.15);font-size:14px}.sr .d{width:9px;height:9px;border-radius:50%;background:var(--gn);box-shadow:0 0 8px var(--gn)}.sr .d.w{background:var(--am);box-shadow:0 0 8px var(--am)}.sr small{margin-left:auto;opacity:.8}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--sf);border-bottom:1px solid var(--bd)}.stats div{padding:22px 12px;text-align:center;border-right:1px solid var(--bd)}.stats div:last-child{border:0}.stats b{display:block;font-size:26px;color:var(--in)}.stats small{color:var(--mu)}
+section{padding:50px 0}section.alt{background:var(--alt)}h2{font-size:30px;margin:0 0 6px;letter-spacing:-.8px}.sub{color:var(--mu);margin:0 0 24px;max-width:560px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:20px}.card h3{margin:6px 0;font-size:18px}.card p{margin:0;color:var(--mu);font-size:14.5px}.ic{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,var(--alt),var(--bd));display:flex;align-items:center;justify-content:center;font-size:23px}
+.tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--in)}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:14px}.tab{flex:none;border:1px solid var(--bd);background:var(--sf);color:var(--tx);padding:8px 15px;border-radius:99px;font:inherit;font-weight:600;font-size:14px;cursor:pointer}.tab.on{background:var(--in);color:#fff;border-color:var(--in)}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.kv div{background:var(--alt);padding:10px;border-radius:10px;text-align:center}.kv b{display:block;font-size:15px}.kv small{color:var(--mu);font-size:11px;text-transform:uppercase}
+.ov{overflow-x:auto}.tb{width:100%;border-collapse:collapse;font-size:14px;min-width:520px;background:var(--sf);border-radius:14px;overflow:hidden}.tb th,.tb td{padding:11px 12px;border-bottom:1px solid var(--bd);text-align:center}.tb th:first-child,.tb td:first-child{text-align:left}.tb th{background:var(--alt)}.tb .y{color:var(--gn);font-weight:800}.tb .n{color:var(--bd)}
+label.l{display:block;font-size:13px;font-weight:700;color:var(--mu);margin:12px 0 5px}input[type=range]{width:100%;accent-color:var(--in)}
+.pr{position:relative}.pr.pop{border:2px solid var(--in)}.pr .bd{position:absolute;top:-11px;right:14px;background:var(--in);color:#fff;font-size:11px;font-weight:800;padding:3px 10px;border-radius:99px}.pr b.p{font-size:34px}.pr ul{padding-left:18px;color:var(--mu);font-size:14px;margin:8px 0 14px}
+.tk{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--bd)}.tk:last-child{border:0}.tk .id{font-weight:700}.st{display:flex;gap:4px;margin-top:6px}.st i{flex:1;height:5px;border-radius:3px;background:var(--bd)}.st i.on{background:var(--cy)}.st i.ok{background:var(--gn)}
+.pp{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px;background:var(--alt);color:var(--in);white-space:nowrap}.pp.hi{background:#ffe1e1;color:#b91c1c}
+.sp{display:flex;align-items:flex-end;gap:3px;height:60px;margin-top:8px}.sp i{flex:1;background:linear-gradient(var(--cy),var(--in));border-radius:3px 3px 0 0;transition:height .5s}
+input[type=text],input:not([type]),textarea,select{width:100%;padding:12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit;margin-bottom:10px}
+.av{width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,var(--in),var(--cy));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;margin-bottom:8px}
+footer{background:#0d0f2e;color:#9aa0d3;padding:34px 0;font-size:14px}footer b{color:#fff}
+.fab{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;max-width:250px;background:linear-gradient(135deg,var(--in),var(--bl));color:#fff;border:0;border-radius:14px;padding:10px 14px;font:700 12.5px "Segoe UI",system-ui,sans-serif;text-align:left;box-shadow:0 8px 24px rgba(67,56,202,.5);cursor:pointer}
+.md{position:fixed;inset:0;background:rgba(5,6,30,.65);z-index:50;display:none;align-items:center;justify-content:center;padding:16px}.md.open{display:flex}.md>div{background:var(--sf);border-radius:18px;padding:20px;width:min(420px,100%)}
+.pg{display:none}.pg.on{display:block}
+@media(max-width:760px){.g3,.g2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--bd)}nav .btn{display:none}.logo{flex:1}.links{order:3;width:100%}}
+</style></head><body>
+<div class="ban">IT Solutions Template Demonstration — Click <a onclick="lead()">‘Customize for Your Business’</a> to make it yours. <span class="fdi-by">Designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a></span></div>
+<nav><div class="w"><a class="logo" href="#home"><span class="lm">⌘</span>NexaCore</a><div class="links" id="nav"></div><a class="btn" href="#plans">Get a Quote</a></div></nav>
+
+<div class="pg" id="p-home">
+<div class="hero"><div class="w g2"><div><span class="pill">● All systems operational</span><h1>IT that just <em>works</em> — so you can grow.</h1><p>Managed IT, cybersecurity and cloud for growing businesses. Predictable pricing, 24/7 monitoring and a helpdesk that actually helps.</p><a class="btn" style="background:#fff;color:#2b2a9a" href="#plans">See Plans & Pricing</a> <a class="btn g" style="color:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.5) inset" href="#support">Open Support Portal</a></div>
+<div class="sys"><div class="h mono"><span>System status</span><span id="ck"></span></div><div id="sys"></div><div class="sp" id="sp"></div><small class="mono" style="opacity:.7">Avg response time (ms) · last 24 samples</small></div></div></div>
+<div class="stats"><div><b>99.99%</b><small>Uptime SLA</small></div><div><b>&lt; 15 min</b><small>Avg. ticket response</small></div><div><b>600+</b><small>Businesses managed</small></div><div><b>24/7</b><small>SOC monitoring</small></div></div>
+<section><div class="w"><h2>Solutions</h2><p class="sub">Everything your business needs to run securely.</p><div class="g3" id="hs"></div></div></section>
+</div>
+
+<div class="pg" id="p-solutions"><section><div class="w"><h2>Solutions</h2><p class="sub">Tap a solution for what’s included and how we deliver it.</p><div class="tabs" id="stabs"></div><div class="card" id="spane"></div></div></section>
+<section class="alt"><div class="w"><h2>Success stories</h2><p class="sub">Filter by solution.</p><div class="tabs" id="ftabs"></div><div class="g3" id="proj"></div></div></section></div>
+
+<div class="pg" id="p-plans"><section><div class="w"><h2>Managed IT plans</h2><p class="sub">Per-user pricing with no hidden fees. Adjust your team size to see your monthly cost.</p>
+<div class="card" style="margin-bottom:18px"><label class="l">Team size: <b id="uv"></b> users</label><input type="range" id="us" min="5" max="500" step="5" value="25" oninput="plans()"><div class="tabs" style="margin:10px 0 0"><button class="tab on" id="b0" onclick="bill(0)">Monthly</button><button class="tab" id="b1" onclick="bill(1)">Annual · save 15%</button></div></div>
+<div class="g3" id="pl"></div><br><div class="ov"><table class="tb" id="cmp"></table></div></div></section></div>
+
+<div class="pg" id="p-support"><section><div class="w"><h2>Support portal</h2><p class="sub">Demo client portal — submit a ticket and watch it progress in real time.</p><div class="g2"><div class="card"><h3>New ticket</h3><br><input id="tn" placeholder="Your name"><select id="tc"><option>Email & accounts</option><option>Network / Wi-Fi</option><option>Security concern</option><option>Hardware</option><option>Software & apps</option></select><select id="tp"><option>Normal priority</option><option>High priority</option><option>Critical — business down</option></select><textarea id="tm" rows="3" placeholder="Describe the issue"></textarea><button class="btn" style="width:100%" onclick="newT()">Submit ticket</button></div>
+<div class="card"><h3>My tickets</h3><div id="tks"></div></div></div></div></section></div>
+
+<div class="pg" id="p-about"><section><div class="w"><h2>About NexaCore</h2><p class="sub">Founded by engineers who were tired of IT that breaks and vendors that disappear.</p><div class="g3" style="margin-bottom:22px"><div class="card"><div class="ic">🏅</div><h3>Certified</h3><p>ISO 27001, SOC 2 Type II and major cloud partner status.</p></div><div class="card"><div class="ic">🛰️</div><h3>24/7 SOC</h3><p>Security analysts watching your environment around the clock.</p></div><div class="card"><div class="ic">🤝</div><h3>One team</h3><p>The same named engineers know your setup inside out.</p></div></div><div class="g3" id="team"></div></div></section></div>
+
+<footer><div class="w"><b>NexaCore Managed IT</b><br>300 Circuit Avenue, Tech Park, Metro City · +1 555 070 3000 · support@nexacore.example<br><br>© 2026 NexaCore Technologies. SOC 2 · ISO 27001.</div><div class="fdi-foot">Template designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a> &middot; WhatsApp <a href="https://wa.me/2348133490442" target="_blank" rel="noopener">+234 813 349 0442</a></div></footer>
+<button class="fab" onclick="lead()">Love this layout? Click here to customize this template for your business.</button>
+<div class="md" id="md"><div id="mb"></div></div>
+
+<script>
+const $=id=>document.getElementById(id),M=n=>"$"+Math.round(n).toLocaleString("en-US");
+const PG=[["home","Home"],["solutions","Solutions"],["plans","Plans"],["support","Support"],["about","About"]];
+const SV=[["Managed IT","🖥️","Proactive monitoring, patching and helpdesk for every device and user.",["24/7 monitoring","Unlimited helpdesk","Patch management"],"Onboard in 2 weeks","99.99% uptime"],["Cybersecurity","🔐","Layered defence: endpoint, email, identity and 24/7 SOC.",["Threat detection & response","Phishing training","Penetration testing"],"Onboard in 1 week","Avg. 4 min containment"],["Cloud & Migration","☁️","Move to and optimise the cloud with zero-downtime migrations.",["Cloud strategy","Migration","Cost optimisation"],"4–12 weeks","Up to 35% savings"],["Networking","📡","Secure, fast office and remote networks, designed and managed.",["Wi-Fi & LAN design","SD-WAN & VPN","Firewall management"],"2–6 weeks","99.9% link uptime"],["Backup & Recovery","💾","Immutable backups and tested disaster-recovery plans.",["Automated backups","DR testing","Ransomware recovery"],"1 week","RTO under 1 hour"],["IT Consulting","🧭","Roadmaps, vendor selection and virtual CIO leadership.",["Technology roadmap","Vendor management","vCIO services"],"Flexible","Retainer or project"]];
+const PJ=[["Brightwell Dental","Managed IT","#4338ca","Cut IT tickets by 62% in 90 days."],["Orion Legal","Cybersecurity","#2563eb","Stopped a ransomware attempt in 4 minutes."],["Kite Logistics","Cloud & Migration","#06b6d4","Migrated 80 servers with zero downtime."],["Maple Retail","Networking","#10b981","Unified Wi-Fi across 24 stores."],["Atlas Finance","Backup & Recovery","#f59e0b","Recovered full systems in 47 minutes."],["Pine Health","Cybersecurity","#7c3aed","Achieved compliance audit in one pass."]];
+const PL=[["Essentials",29,["Helpdesk (business hours)","Monitoring & patching","Antivirus"]],["Business",59,["24/7 helpdesk","Managed security + SOC","Backup & Microsoft 365 admin"]],["Enterprise",99,["Dedicated engineer","vCIO & compliance","DR plan & priority SLA"]]];
+const FT=[["Remote helpdesk",1,1,1],["24/7 monitoring",0,1,1],["Managed security (SOC)",0,1,1],["Cloud backup",0,1,1],["Compliance reporting",0,0,1],["Dedicated engineer",0,0,1]];
+const TM=[["Ravi Menon","CEO & Founder","Systems architect · 20 yrs"],["Hannah Voss","CTO","Cloud & security · 16 yrs"],["Tobias Lindgren","Head of Security","Ex-SOC lead · 14 yrs"]];
+$("nav").innerHTML=PG.map(p=>`<a href="#${p[0]}" data-p="${p[0]}">${p[1]}</a>`).join("");
+$("hs").innerHTML=SV.map((s,i)=>`<a class="card" href="#solutions" onclick="svc(${i})"><div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p></a>`).join("");
+function svc(i){$("stabs").innerHTML=SV.map((s,j)=>`<button class="tab ${j==i?"on":""}" onclick="svc(${j})">${s[0]}</button>`).join("");const s=SV[i];$("spane").innerHTML=`<div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p><ul style="color:var(--mu)">${s[3].map(x=>`<li>${x}</li>`).join("")}</ul><div class="kv"><div><b>${s[4]}</b><small>Onboarding</small></div><div><b>${s[5]}</b><small>Typical result</small></div><div><b>Fixed fee</b><small>Pricing</small></div></div><a class="btn" href="#plans">See pricing</a>`}svc(0);
+let fl="All";function proj(){const c=["All",...new Set(PJ.map(p=>p[1]))];$("ftabs").innerHTML=c.map(x=>`<button class="tab ${x==fl?"on":""}" onclick="fl='${x}';proj()">${x}</button>`).join("");$("proj").innerHTML=PJ.filter(p=>fl=="All"||p[1]==fl).map(p=>`<div class="card"><div style="height:6px;border-radius:4px;background:${p[2]};margin-bottom:12px"></div><span class="tag">${p[1]}</span><h3>${p[0]}</h3><p>${p[3]}</p></div>`).join("")}proj();
+let ann=0;function bill(a){ann=a;$("b0").classList.toggle("on",!a);$("b1").classList.toggle("on",!!a);plans()}
+function plans(){const u=+$("us").value,disc=u>=200?.2:u>=50?.1:0;$("uv").textContent=u+(disc?` · ${disc*100}% volume discount`:"");$("pl").innerHTML=PL.map((p,i)=>{const pu=p[1]*(1-disc)*(ann?.85:1);return`<div class="card pr ${i==1?"pop":""}">${i==1?'<span class="bd">POPULAR</span>':""}<span class="tag">${p[0]}</span><h3>${M(pu*u)}<small style="font-size:14px;color:var(--mu)"> /mo</small></h3><p>${M(pu)} per user</p><ul>${p[2].map(x=>`<li>${x}</li>`).join("")}</ul><a class="btn ${i==1?"":"g"}" href="#support">Choose ${p[0]}</a></div>`}).join("");
+$("cmp").innerHTML=`<tr><th>Feature</th>${PL.map(p=>`<th>${p[0]}</th>`).join("")}</tr>`+FT.map(f=>`<tr><td>${f[0]}</td>${[1,2,3].map(i=>`<td class="${f[i]?"y":"n"}">${f[i]?"✓":"—"}</td>`).join("")}</tr>`).join("")}plans();
+const SYS=[["Cloud hosting",99.99],["Email & collaboration",99.98],["VPN & remote access",99.97],["Backup services",100],["Helpdesk platform",99.99]];
+$("sys").innerHTML=SYS.map((s,i)=>`<div class="sr"><span class="d" id="d${i}"></span>${s[0]}<small class="mono">${s[1]}%</small></div>`).join("");
+let sp=[...Array(24)].map(()=>40+Math.random()*30);function spk(){sp.push(38+Math.random()*40);sp.shift();if($("sp"))$("sp").innerHTML=sp.map(v=>`<i style="height:${v}%"></i>`).join("");if($("ck"))$("ck").textContent=new Date().toLocaleTimeString("en-US",{hour12:false});const k=Math.floor(Math.random()*SYS.length);const d=$("d"+k);if(d&&Math.random()<.12){d.classList.add("w");setTimeout(()=>d.classList.remove("w"),2500)}}spk();setInterval(spk,1500);
+const TKS=[];let tc=4821;const STG=["Received","Assigned","In progress","Resolved"];
+function newT(){const n=$("tn").value.trim();if(!n||!$("tm").value.trim())return alert("Please add your name and a description.");TKS.unshift({id:"TKT-"+(++tc),c:$("tc").value,p:$("tp").selectedIndex,s:0,n});$("tm").value="";showT();const t=TKS[0],iv=setInterval(()=>{t.s++;showT();if(t.s>=3)clearInterval(iv)},3500)}
+function showT(){$("tks").innerHTML=TKS.length?TKS.map(t=>`<div class="tk"><div style="flex:1"><span class="id mono">${t.id}</span> <span class="pp ${t.p?"hi":""}">${["Normal","High","Critical"][t.p]}</span><br><small style="color:var(--mu)">${t.c} · ${t.n}</small><div class="st">${STG.map((x,i)=>`<i class="${i<t.s||t.s==3?"ok":i==t.s?"on":""}"></i>`).join("")}</div></div><b style="font-size:13px;color:${t.s==3?"var(--gn)":"var(--in)"}">${STG[t.s]}</b></div>`).join(""):`<p style="color:var(--mu);margin-top:10px">No tickets yet. Submit one to see the live status flow.</p>`}showT();
+$("team").innerHTML=TM.map(t=>`<div class="card"><div class="av">${t[0].split(" ").map(x=>x[0]).join("")}</div><h3>${t[0]}</h3><span class="tag">${t[1]}</span><p style="margin-top:6px">${t[2]}</p></div>`).join("");
+function lead(){$("mb").innerHTML=`<h3 style="margin:0 0 4px">Customize this template</h3><p style="color:var(--mu);margin:0 0 12px">Tell us about your business and we’ll get back to you.</p><input id="ln" placeholder="Your name"><input id="le" placeholder="Email or WhatsApp"><textarea id="lm" rows="3" placeholder="Business name & what you do"></textarea><button class="btn" style="width:100%" onclick="ls()">Request consultation</button><button class="btn g" style="width:100%;margin-top:10px" onclick="$('md').classList.remove('open')">Cancel</button>`;$("md").classList.add("open")}
+function ls(){$("mb").innerHTML=$("ln").value&&$("le").value?`<h3>Thanks, ${$("ln").value}! ✓</h3><p style="color:var(--mu)">Request noted. (Demo form — connect to email/WhatsApp/CRM before launch.)</p><button class="btn" style="width:100%" onclick="$('md').classList.remove('open')">Done</button>`:`<p>Please add your name and contact.</p><button class="btn" onclick="lead()">Back</button>`}
+function route(){const h=(location.hash||"#home").slice(1);const p=PG.some(x=>x[0]==h)?h:"home";document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id=="p-"+p));document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.p==p));window.scrollTo(0,0)}
+addEventListener("hashchange",route);route();
+</script><!-- fdi-branding -->
+<style>
+.fdi-by{margin-left:.55em;white-space:nowrap}
+.fdi-by a{font-weight:700}
+.fdi-foot{padding:14px 18px calc(14px + env(safe-area-inset-bottom,0px));text-align:center;font:600 12.5px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif;color:inherit;opacity:.92;border-top:1px solid rgba(128,128,128,.3)}
+.fdi-foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+</style>
+<script>
+(function(){
+var SITE='https://finessedigitalinnovations-domain.github.io/.com',NUM='2348133490442',EMAIL='finessedigitalinnovations@gmail.com',SHOW='+234 813 349 0442';
+var tname=(document.title.split(' \u2014 ')[0]||document.title).replace(' \u00b7 ',' ');
+var host,root,opener;
+var CSS=".bk{position:fixed;inset:0;background:rgba(5,10,25,.68);display:flex;align-items:center;justify-content:center;padding:16px;font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif}"
++".card{position:relative;background:#fff;color:#0A1330;width:min(440px,100%);max-height:92vh;overflow:auto;border-radius:16px;padding:24px;border-top:5px solid #14D87C;box-shadow:0 24px 60px rgba(0,0,0,.4)}"
++".x{position:absolute;right:10px;top:10px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(128,128,128,.18);color:inherit;font-size:20px;cursor:pointer}"
++".by{margin:0 0 4px;font-size:12.5px;font-weight:700;letter-spacing:.02em;color:#067A45}h2{margin:0 0 6px;font-size:1.45rem;line-height:1.15}.sub{margin:0 0 14px;font-size:.95rem;opacity:.8}"
++"label{display:block;font-weight:700;font-size:.9rem;margin:10px 0 4px}input,textarea{width:100%;box-sizing:border-box;font:inherit;color:inherit;background:#F4F7FC;border:1.5px solid #D3DCEE;border-radius:10px;padding:.65rem .8rem}input:focus,textarea:focus{outline:3px solid #0A57D6;outline-offset:1px}"
++".hint{min-height:1.3em;margin:8px 0 0;color:#B42318;font-size:.9rem}.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}"
++".p,.s{flex:1 1 150px;text-align:center;text-decoration:none;font-weight:700;padding:.75rem 1rem;border-radius:12px;border:2px solid #0A1330;color:#0A1330;cursor:pointer}.p{background:#14D87C;border-color:#14D87C;color:#052214}.p:hover{background:#0FC470}.s:hover{background:#0A1330;color:#fff}"
++".foot{margin:14px 0 0;text-align:center;font-size:.85rem;opacity:.8}.foot a{color:inherit}"
++"@media(prefers-color-scheme:dark){.card{background:#0E1733;color:#EAF0FF}input,textarea{background:#070D20;border-color:#2A3A6A}.by{color:#43E59A}.hint{color:#FF9B8F}.s{border-color:#EAF0FF;color:#EAF0FF}.s:hover{background:#EAF0FF;color:#0A1330}}";
+function build(){
+host=document.createElement('div');host.id='fdi-lead';host.style.cssText='position:fixed;inset:0;z-index:2147483000;display:none';
+root=host.attachShadow({mode:'open'});
+root.innerHTML='<style>'+CSS+'</style><div class="bk"><div class="card" role="dialog" aria-modal="true" aria-labelledby="t"><button class="x" type="button" aria-label="Close">\u00d7</button>'
++'<p class="by">Designed by Finesse Digital Innovations</p><h2 id="t">Customise this template</h2><p class="sub">Tell us about your business. Your message opens in WhatsApp, already written.</p>'
++'<label for="n">Your name</label><input id="n" autocomplete="name"><label for="b">Business name</label><input id="b" autocomplete="organization">'
++'<label for="m">Anything else? (optional)</label><textarea id="m" rows="3"></textarea><p class="hint" id="h" role="alert"></p>'
++'<div class="row"><a class="p" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="s" id="em">Send by email</a></div>'
++'<p class="foot"><a href="'+SITE+'" target="_blank" rel="noopener">Visit our website</a> \u00b7 '+SHOW+'</p></div></div>';
+document.body.appendChild(host);
+var g=function(id){return root.getElementById(id)};
+function v(id){return g(id).value.trim()}
+function msg(){var n=v('n'),b=v('b'),m=v('m');return 'Hello Finesse Digital Innovations,\n\nMy name is '+(n||'(your name)')+'.'+(b?'\nMy business: '+b+'.':'')+'\nI would like to customise the '+tname+' for my business.'+(m?'\n\n'+m:'')}
+function upd(){var m=msg();g('wa').href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m);g('em').href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Template enquiry: '+tname)+'&body='+encodeURIComponent(m)}
+function guard(e){if(!v('n')){e.preventDefault();g('h').textContent='Please add your name so we know who to reply to.';g('n').focus()}else g('h').textContent=''}
+root.addEventListener('input',function(){upd();if(v('n'))g('h').textContent=''});
+g('wa').addEventListener('click',guard);g('em').addEventListener('click',guard);
+root.querySelector('.x').addEventListener('click',close);
+root.querySelector('.bk').addEventListener('click',function(e){if(e.target.classList.contains('bk'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&host.style.display!=='none')close()});
+upd();}
+function open(){if(!host)build();opener=document.activeElement;host.style.display='block';setTimeout(function(){root.getElementById('n').focus()},30)}
+function close(){host.style.display='none';if(opener&&opener.focus)try{opener.focus()}catch(e){}}
+window.lead=open;
+})();
+</script>
+</body></html>

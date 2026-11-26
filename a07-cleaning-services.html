@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>A7 · Cleaning Services Template — SparkleNest</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f0fbfd;--sf:#fff;--alt:#dff5f9;--tx:#0b3140;--mu:#547987;--bd:#cfe9ef;--aq:#06b6d4;--aq2:#0891b2;--yl:#ffd23f;--pk:#ff8fab;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#07202a;--sf:#0c2c39;--alt:#0a2631;--tx:#e6f8fc;--mu:#8bb5c1;--bd:#17414f;--aq:#22d3ee;--aq2:#06b6d4;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:120px}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 "Trebuchet MS","Segoe UI",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}.w{max-width:1070px;margin:auto;padding:0 18px}
+.ban{background:var(--tx);color:#e6f8fc;font-size:12px;padding:7px 12px;text-align:center}.ban a{text-decoration:underline;color:var(--yl);font-weight:700;cursor:pointer}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:2px solid var(--alt);z-index:10}
+nav .w{display:flex;align-items:center;justify-content:space-between;min-height:62px;padding-block:8px;gap:8px 10px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:21px;white-space:nowrap;line-height:1.2;display:flex;align-items:center;gap:6px}.logo b{color:var(--aq2)}
+.links{display:flex;gap:2px;overflow-x:auto}.links a{padding:8px 12px;border-radius:99px;font-size:14px;font-weight:700;color:var(--mu);white-space:nowrap}.links a.on{background:var(--yl);color:#3a2f00}
+.btn{display:inline-block;border:0;border-radius:99px;padding:13px 24px;font:inherit;font-weight:800;font-size:15px;cursor:pointer;background:var(--aq2);color:#fff;box-shadow:0 5px 0 #065f73}.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #065f73}.btn.y{background:var(--yl);color:#3a2f00;box-shadow:0 5px 0 #c9a21a}.btn.g{background:transparent;color:var(--tx);box-shadow:0 0 0 2px var(--aq) inset}
+.hero{padding:54px 0 70px;position:relative;overflow:hidden;background:linear-gradient(160deg,var(--aq),#67e8f9 60%,#a5f3fc);color:#04303b}
+.hero .bb{position:absolute;border-radius:50%;background:rgba(255,255,255,.35);animation:fl 7s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-22px)}}
+.hero .w{position:relative;z-index:1}.hero h1{font-size:clamp(34px,7vw,62px);line-height:1.05;margin:0 0 14px;letter-spacing:-1.5px;max-width:700px}.hero h1 em{font-style:normal;background:var(--yl);padding:0 10px;border-radius:12px;display:inline-block;transform:rotate(-2deg)}.hero p{max-width:500px;margin:0 0 24px;font-size:17px}
+.wave{display:block;width:100%;margin-top:-1px;color:var(--bg)}
+.tr{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:-34px;position:relative;z-index:2}.tr div{background:var(--sf);border:2px solid var(--alt);border-radius:18px;padding:14px;text-align:center;box-shadow:0 8px 20px -12px rgba(6,182,212,.5)}.tr b{display:block;font-size:22px;color:var(--aq2)}.tr small{color:var(--mu)}
+section{padding:50px 0}section.alt{background:var(--alt)}h2{font-size:32px;margin:0 0 6px;letter-spacing:-.8px}.sub{color:var(--mu);margin:0 0 24px;max-width:540px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.card{background:var(--sf);border:2px solid var(--alt);border-radius:22px;padding:20px}.card h3{margin:6px 0;font-size:18px}.card p{margin:0;color:var(--mu);font-size:14.5px}.ic{width:50px;height:50px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;background:var(--alt)}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:14px;padding:2px}.tab{flex:none;border:2px solid var(--bd);background:var(--sf);color:var(--tx);padding:8px 15px;border-radius:99px;font:inherit;font-weight:700;font-size:14px;cursor:pointer}.tab.on{background:var(--aq2);color:#fff;border-color:var(--aq2)}
+.cnt{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--bd)}.cnt button{width:34px;height:34px;border-radius:50%;border:0;background:var(--alt);color:var(--tx);font-size:18px;font-weight:800;cursor:pointer}.cnt span{display:inline-block;min-width:34px;text-align:center;font-weight:800}
+.ad{display:flex;align-items:center;gap:10px;padding:10px 12px;border:2px solid var(--bd);border-radius:14px;margin-bottom:8px;cursor:pointer;background:var(--sf)}.ad.on{border-color:var(--aq2);background:var(--alt)}.ad b{margin-left:auto}
+.tot{background:linear-gradient(135deg,var(--aq2),#0e7490);color:#fff;border-radius:22px;padding:22px;position:sticky;top:130px}.tot b.p{font-size:44px;display:block;line-height:1.1}.tot .row{display:flex;justify-content:space-between;font-size:14px;padding:5px 0;border-top:1px solid rgba(255,255,255,.25)}
+.sv{display:inline-block;background:var(--yl);color:#3a2f00;font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:12px}.cal button{padding:8px 0;border:2px solid var(--bd);border-radius:12px;background:var(--sf);color:var(--tx);cursor:pointer;font:inherit;line-height:1.2}.cal button small{display:block;font-size:10px;color:var(--mu);text-transform:uppercase}.cal button b{font-size:15px}.cal button.on{background:var(--aq2);border-color:var(--aq2);color:#fff}.cal button.on small{color:#cffafe}
+.sl{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:14px}.sl button{padding:10px 4px;border:2px solid var(--bd);border-radius:12px;background:var(--sf);color:var(--tx);cursor:pointer;font:inherit;font-weight:700;font-size:13px}.sl button.on{background:var(--yl);border-color:var(--yl);color:#3a2f00}
+.ba{position:relative;aspect-ratio:16/10;border-radius:22px;overflow:hidden;border:3px solid var(--sf);box-shadow:0 14px 30px -16px rgba(6,182,212,.7);user-select:none}.ba svg{position:absolute;inset:0;width:100%;height:100%}#after{clip-path:inset(0 0 0 50%)}
+.ba .ln{position:absolute;top:0;bottom:0;width:4px;background:#fff;left:50%;transform:translateX(-2px);pointer-events:none}.ba .tg{position:absolute;top:10px;font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px;background:rgba(0,0,0,.55);color:#fff}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.st{color:#f5a300;letter-spacing:2px}.av{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;margin-bottom:6px}
+.bar{display:flex;gap:6px;margin-bottom:16px}.bar i{flex:1;height:7px;border-radius:5px;background:var(--bd)}.bar i.on{background:var(--yl)}
+input[type=text],input:not([type]),textarea{width:100%;padding:12px;border:2px solid var(--bd);border-radius:14px;background:var(--sf);color:var(--tx);font:inherit;margin-bottom:10px}
+footer{background:var(--tx);color:#9cc3ce;padding:34px 0;font-size:14px}footer b{color:#fff}
+.fab{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;max-width:250px;background:var(--yl);color:#3a2f00;border:0;border-radius:18px;padding:10px 14px;font:800 12.5px "Trebuchet MS",system-ui,sans-serif;text-align:left;box-shadow:0 5px 0 #c9a21a,0 12px 24px rgba(0,0,0,.25);cursor:pointer}
+.md{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;display:none;align-items:center;justify-content:center;padding:16px}.md.open{display:flex}.md>div{background:var(--sf);border-radius:24px;padding:20px;width:min(420px,100%)}
+.pg{display:none}.pg.on{display:block}
+@media(max-width:760px){.g3,.g2{grid-template-columns:1fr}.tr{grid-template-columns:repeat(2,1fr)}nav .btn{display:none}.logo{flex:1;font-size:19px}.links{order:3;width:100%}.tot{position:static}}
+@media(prefers-reduced-motion:reduce){.hero .bb{animation:none}}
+</style></head><body>
+<div class="ban">Cleaning Services Template Demonstration — Click <a onclick="lead()">‘Customize for Your Business’</a> to make it yours. <span class="fdi-by">Designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a></span></div>
+<nav><div class="w"><a class="logo" href="#home">✨ Sparkle<b>Nest</b></a><div class="links" id="nav"></div><a class="btn" href="#price">Get Instant Price</a></div></nav>
+
+<div class="pg" id="p-home">
+<div class="hero"><i class="bb" style="width:90px;height:90px;left:6%;top:30px"></i><i class="bb" style="width:50px;height:50px;right:12%;top:60px;animation-delay:-2s"></i><i class="bb" style="width:130px;height:130px;right:4%;bottom:20px;animation-delay:-4s"></i>
+<div class="w"><h1>A spotless home. <em>Zero effort.</em></h1><p>Vetted, insured cleaners and eco-friendly products. Get an instant price in 30 seconds and book your clean online.</p><a class="btn y" href="#price">Get Instant Price</a> <a class="btn g" style="color:#04303b;box-shadow:0 0 0 2px #04303b inset" href="#gallery">See Before & After</a></div></div>
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" height="40"><path fill="currentColor" d="M0 30C240 70 480 0 720 30s480 40 720 0V60H0z"/></svg>
+<div class="w"><div class="tr"><div><b>15,000+</b><small>Happy homes</small></div><div><b>4.9 ★</b><small>Average rating</small></div><div><b>100%</b><small>Insured & vetted</small></div><div><b>Same day</b><small>Booking available</small></div></div></div>
+<section><div class="w"><h2>Pick your clean</h2><p class="sub">From a quick refresh to a full move-out reset.</p><div class="g3" id="hs"></div></div></section>
+<section class="alt"><div class="w"><h2>Why SparkleNest?</h2><div class="g3"><div class="card"><div class="ic">🌿</div><h3>Eco-friendly</h3><p>Plant-based products safe for kids and pets.</p></div><div class="card"><div class="ic">🛡️</div><h3>Happiness guarantee</h3><p>Not thrilled? We’ll re-clean free within 24 hours.</p></div><div class="card"><div class="ic">📱</div><h3>Book in a minute</h3><p>Instant pricing, flexible slots, easy rescheduling.</p></div></div></div></section>
+</div>
+
+<div class="pg" id="p-services"><section><div class="w"><h2>Our services</h2><p class="sub">Tap one to see what’s included.</p><div class="tabs" id="stabs"></div><div class="g2"><div class="card" id="spane"></div><div class="card"><h3>✅ Always included</h3><p style="margin-top:8px">Dusting all surfaces · Vacuum & mop floors · Kitchen counters & sinks · Bathroom scrub & disinfect · Bins emptied · Mirrors & glass spots</p></div></div></div></section></div>
+
+<div class="pg" id="p-price"><section><div class="w"><h2>Instant estimator & booking</h2><p class="sub">Build your clean, see the price live, then pick a time.</p><div class="bar" id="bar"></div><div id="flow"></div></div></section></div>
+
+<div class="pg" id="p-gallery"><section><div class="w"><h2>Before & after</h2><p class="sub">Drag the slider — see the SparkleNest difference.</p><div class="tabs" id="gt"></div><div class="ba" id="ba"></div></div></section>
+<section class="alt"><div class="w"><h2>Loved by customers</h2><p class="sub">&nbsp;</p><div class="g3" id="rv"></div></div></section></div>
+
+<footer><div class="w"><b>SparkleNest Cleaning Co.</b><br>9 Bright Street, Metro City · +1 555 040 7788 · hello@sparklenest.example<br><br>© 2026 SparkleNest. Bonded, insured, and spotless.</div><div class="fdi-foot">Template designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a> &middot; WhatsApp <a href="https://wa.me/2348133490442" target="_blank" rel="noopener">+234 813 349 0442</a></div></footer>
+<button class="fab" onclick="lead()">Love this layout? Click here to customize this template for your business.</button>
+<div class="md" id="md"><div id="mb"></div></div>
+
+<script>
+const $=id=>document.getElementById(id),M=n=>"$"+Math.round(n).toLocaleString("en-US");
+const PG=[["home","Home"],["services","Services"],["price","Instant Price"],["gallery","Before & After"]];
+const SV=[["Standard Clean","🧽","Regular upkeep for a consistently fresh home.",80,25,20,1],["Deep Clean","🧼","Top-to-bottom detail including baseboards, grout and appliances.",140,40,35,1.6],["Move-In / Out","📦","Empty-property reset so you get your deposit back.",180,50,40,2],["Office Clean","🏢","After-hours cleaning for workspaces of every size.",110,30,28,1.2]];
+const AD=[["Inside fridge","🧊",25],["Inside oven","🔥",30],["Interior windows","🪟",40],["Laundry & folding","👕",20],["Pet hair treatment","🐾",15]];
+const FR=[["One-time",0],["Monthly",.10],["Every 2 weeks",.15],["Weekly",.20]];
+const RV=[["Sarah M.","Walked in to a sparkling home. Booking took one minute!"],["David K.","Deep clean was unreal. Grout looks brand new."],["Priya S.","Reliable, friendly and my weekly lifesaver."]];
+const S={t:0,bed:2,bath:1,fr:0,ad:new Set(),step:0,date:"",time:"",name:"",email:"",addr:""};
+$("nav").innerHTML=PG.map(p=>`<a href="#${p[0]}" data-p="${p[0]}">${p[1]}</a>`).join("");
+$("hs").innerHTML=SV.map((s,i)=>`<a class="card" href="#services" onclick="svc(${i})"><div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p><p style="margin-top:8px"><b style="color:var(--aq2)">from ${M(s[3]+s[4]+s[5])}</b></p></a>`).join("");
+function svc(i){$("stabs").innerHTML=SV.map((s,j)=>`<button class="tab ${j==i?"on":""}" onclick="svc(${j})">${s[1]} ${s[0]}</button>`).join("");const s=SV[i];$("spane").innerHTML=`<div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p><p style="margin:10px 0"><b>Typical time:</b> ${Math.round((2+0)*s[6])}–${Math.round(4*s[6])} hrs</p><a class="btn" href="#price" onclick="S.t=${i};S.step=0;flow()">Price this clean</a>`}svc(0);
+function calc(){const s=SV[S.t];let b=s[3]+s[4]*S.bed+s[5]*S.bath;const a=[...S.ad].reduce((x,i)=>x+AD[i][2],0);const d=b*FR[S.fr][1];return{b,a,d,tot:b+a-d,hrs:Math.max(2,Math.round((1+S.bed*.8+S.bath*.6)*s[6]))}}
+const next14=()=>{const o=[];for(let i=1;i<=14;i++){const d=new Date();d.setDate(d.getDate()+i);o.push(d)}return o};
+function flow(){$("bar").innerHTML=[0,1,2,3].map(i=>`<i class="${i<=S.step?"on":""}"></i>`).join("");const c=calc();let h="";
+if(S.step==0)h=`<div class="g2"><div><div class="tabs">${SV.map((s,i)=>`<button class="tab ${i==S.t?"on":""}" onclick="S.t=${i};flow()">${s[1]} ${s[0]}</button>`).join("")}</div><div class="card"><div class="cnt"><span style="font-weight:700">🛏️ Bedrooms / rooms</span><div><button onclick="S.bed=Math.max(0,S.bed-1);flow()">−</button><span>${S.bed}</span><button onclick="S.bed=Math.min(8,S.bed+1);flow()">+</button></div></div><div class="cnt"><span style="font-weight:700">🛁 Bathrooms</span><div><button onclick="S.bath=Math.max(1,S.bath-1);flow()">−</button><span>${S.bath}</span><button onclick="S.bath=Math.min(6,S.bath+1);flow()">+</button></div></div><p style="font-weight:700;margin:14px 0 6px">How often?</p><div class="tabs">${FR.map((f,i)=>`<button class="tab ${i==S.fr?"on":""}" onclick="S.fr=${i};flow()">${f[0]}${f[1]?` −${f[1]*100}%`:""}</button>`).join("")}</div><p style="font-weight:700;margin:6px 0">Add-ons</p>${AD.map((a,i)=>`<div class="ad ${S.ad.has(i)?"on":""}" onclick="S.ad.has(${i})?S.ad.delete(${i}):S.ad.add(${i});flow()"><span>${a[1]}</span>${a[0]}<b>+${M(a[2])}</b></div>`).join("")}</div></div>
+<div class="tot"><small>YOUR ESTIMATE</small><b class="p">${M(c.tot)}</b><span class="sv">≈ ${c.hrs} hrs · 2 cleaners</span><div style="margin-top:12px"><div class="row"><span>${SV[S.t][0]}</span><span>${M(c.b)}</span></div>${c.a?`<div class="row"><span>Add-ons</span><span>${M(c.a)}</span></div>`:""}${c.d?`<div class="row"><span>${FR[S.fr][0]} discount</span><span>−${M(c.d)}</span></div>`:""}</div><br><button class="btn y" style="width:100%" onclick="S.step=1;flow()">Pick a date →</button></div></div>`;
+if(S.step==1)h=`<div class="card" style="max-width:560px;margin:auto"><h3>When should we come?</h3><div class="cal">${next14().slice(0,14).map(d=>{const k=d.toDateString();return`<button class="${S.date==k?"on":""}" onclick="S.date='${k}';flow()"><small>${d.toLocaleString("en-US",{weekday:"short"})}</small><b>${d.getDate()}</b></button>`}).join("")}</div><div class="sl">${["8:00 AM","10:00 AM","12:00 PM","2:00 PM","4:00 PM","6:00 PM"].map(t=>`<button class="${S.time==t?"on":""}" onclick="S.time='${t}';flow()">${t}</button>`).join("")}</div><button class="btn g" onclick="S.step=0;flow()">Back</button> <button class="btn" onclick="if(!S.date||!S.time)return alert('Pick a date and time');S.step=2;flow()">Continue</button></div>`;
+if(S.step==2)h=`<div class="card" style="max-width:560px;margin:auto"><h3>Your details</h3><br><input id="fn" placeholder="Full name" value="${S.name}"><input id="fe" placeholder="Email or phone" value="${S.email}"><input id="fa" placeholder="Home address" value="${S.addr}"><textarea id="fm" rows="2" placeholder="Access notes, pets, special requests"></textarea><button class="btn g" onclick="sv3();S.step=1;flow()">Back</button> <button class="btn" onclick="sv3();if(!S.name||!S.email)return alert('Name and contact required');S.step=3;flow()">Confirm booking · ${M(c.tot)}</button></div>`;
+if(S.step==3)h=`<div class="card" style="max-width:560px;margin:auto;text-align:center"><div style="font-size:54px">🎉</div><h3>You’re booked, ${S.name}!</h3><p>${SV[S.t][0]} · ${FR[S.fr][0]}<br>${S.date} at ${S.time}<br>Total ${M(c.tot)} — pay after the clean.</p><br><a class="btn" href="#home">Back to home</a></div>`;
+$("flow").innerHTML=h}
+function sv3(){S.name=$("fn").value;S.email=$("fe").value;S.addr=$("fa").value}flow();
+const SC=[["Kitchen","#fef3c7","#94a3b8"],["Bathroom","#dbeafe","#a8a29e"],["Living room","#fce7f3","#9ca3af"]];let gi=0;
+function scene(id,clean,c){const dirt=clean?"":[...Array(14)].map((_,i)=>`<circle cx="${40+i*47%560}" cy="${60+i*61%240}" r="${6+i%4*4}" fill="${c[2]}" opacity=".55"/>`).join("");const sp=clean?`<text x="480" y="80" font-size="34">✨</text><text x="90" y="140" font-size="24">✨</text><text x="330" y="60" font-size="20">✨</text>`:"";
+return`<svg id="${id}" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice"><rect width="600" height="375" fill="${clean?c[1]:"#8b8274"}"/><rect y="250" width="600" height="125" fill="${clean?"#fff":"#6b6358"}"/><rect x="60" y="150" width="200" height="100" rx="8" fill="${clean?"#06b6d4":"#5b6b70"}"/><rect x="330" y="120" width="190" height="130" rx="8" fill="${clean?"#ffd23f":"#7d7447"}"/><rect x="360" y="60" width="130" height="60" rx="6" fill="${clean?"#fff":"#9a9488"}" opacity=".8"/>${dirt}${sp}</svg>`}
+function ba(){$("gt").innerHTML=SC.map((s,i)=>`<button class="tab ${i==gi?"on":""}" onclick="gi=${i};ba();">${s[0]}</button>`).join("");$("ba").innerHTML=scene("before",0,SC[gi])+scene("after",1,SC[gi])+`<span class="tg" style="left:10px">BEFORE</span><span class="tg" style="right:10px">AFTER</span><div class="ln" id="ln"></div><input type="range" min="0" max="100" value="50" aria-label="Before and after slider" oninput="$('after').style.clipPath='inset(0 0 0 '+this.value+'%)';$('ln').style.left=this.value+'%'">`}ba();
+$("rv").innerHTML=RV.map((r,i)=>`<div class="card"><div class="av" style="background:hsl(${i*70+180},65%,45%)">${r[0][0]}</div><div class="st">★★★★★</div><p style="margin:6px 0;color:var(--tx)">“${r[1]}”</p><b style="font-size:14px">${r[0]}</b></div>`).join("");
+function lead(){$("mb").innerHTML=`<h3 style="margin:0 0 4px">Customize this template</h3><p style="color:var(--mu);margin:0 0 12px">Tell us about your business and we’ll get back to you.</p><input id="ln2" placeholder="Your name"><input id="le" placeholder="Email or WhatsApp"><textarea id="lm" rows="3" placeholder="Business name & what you do"></textarea><button class="btn" style="width:100%" onclick="ls()">Request consultation</button><button class="btn g" style="width:100%;margin-top:12px" onclick="$('md').classList.remove('open')">Cancel</button>`;$("md").classList.add("open")}
+function ls(){$("mb").innerHTML=$("ln2").value&&$("le").value?`<h3>Thanks, ${$("ln2").value}! ✓</h3><p style="color:var(--mu)">Request noted. (Demo form — connect to email/WhatsApp/CRM before launch.)</p><button class="btn" style="width:100%" onclick="$('md').classList.remove('open')">Done</button>`:`<p>Please add your name and contact.</p><button class="btn" onclick="lead()">Back</button>`}
+function route(){const h=(location.hash||"#home").slice(1);const p=PG.some(x=>x[0]==h)?h:"home";document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id=="p-"+p));document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.p==p));window.scrollTo(0,0)}
+addEventListener("hashchange",route);route();
+</script><!-- fdi-branding -->
+<style>
+.fdi-by{margin-left:.55em;white-space:nowrap}
+.fdi-by a{font-weight:700}
+.fdi-foot{padding:14px 18px calc(14px + env(safe-area-inset-bottom,0px));text-align:center;font:600 12.5px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif;color:inherit;opacity:.92;border-top:1px solid rgba(128,128,128,.3)}
+.fdi-foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+</style>
+<script>
+(function(){
+var SITE='https://finessedigitalinnovations-domain.github.io/.com',NUM='2348133490442',EMAIL='finessedigitalinnovations@gmail.com',SHOW='+234 813 349 0442';
+var tname=(document.title.split(' \u2014 ')[0]||document.title).replace(' \u00b7 ',' ');
+var host,root,opener;
+var CSS=".bk{position:fixed;inset:0;background:rgba(5,10,25,.68);display:flex;align-items:center;justify-content:center;padding:16px;font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif}"
++".card{position:relative;background:#fff;color:#0A1330;width:min(440px,100%);max-height:92vh;overflow:auto;border-radius:16px;padding:24px;border-top:5px solid #14D87C;box-shadow:0 24px 60px rgba(0,0,0,.4)}"
++".x{position:absolute;right:10px;top:10px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(128,128,128,.18);color:inherit;font-size:20px;cursor:pointer}"
++".by{margin:0 0 4px;font-size:12.5px;font-weight:700;letter-spacing:.02em;color:#067A45}h2{margin:0 0 6px;font-size:1.45rem;line-height:1.15}.sub{margin:0 0 14px;font-size:.95rem;opacity:.8}"
++"label{display:block;font-weight:700;font-size:.9rem;margin:10px 0 4px}input,textarea{width:100%;box-sizing:border-box;font:inherit;color:inherit;background:#F4F7FC;border:1.5px solid #D3DCEE;border-radius:10px;padding:.65rem .8rem}input:focus,textarea:focus{outline:3px solid #0A57D6;outline-offset:1px}"
++".hint{min-height:1.3em;margin:8px 0 0;color:#B42318;font-size:.9rem}.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}"
++".p,.s{flex:1 1 150px;text-align:center;text-decoration:none;font-weight:700;padding:.75rem 1rem;border-radius:12px;border:2px solid #0A1330;color:#0A1330;cursor:pointer}.p{background:#14D87C;border-color:#14D87C;color:#052214}.p:hover{background:#0FC470}.s:hover{background:#0A1330;color:#fff}"
++".foot{margin:14px 0 0;text-align:center;font-size:.85rem;opacity:.8}.foot a{color:inherit}"
++"@media(prefers-color-scheme:dark){.card{background:#0E1733;color:#EAF0FF}input,textarea{background:#070D20;border-color:#2A3A6A}.by{color:#43E59A}.hint{color:#FF9B8F}.s{border-color:#EAF0FF;color:#EAF0FF}.s:hover{background:#EAF0FF;color:#0A1330}}";
+function build(){
+host=document.createElement('div');host.id='fdi-lead';host.style.cssText='position:fixed;inset:0;z-index:2147483000;display:none';
+root=host.attachShadow({mode:'open'});
+root.innerHTML='<style>'+CSS+'</style><div class="bk"><div class="card" role="dialog" aria-modal="true" aria-labelledby="t"><button class="x" type="button" aria-label="Close">\u00d7</button>'
++'<p class="by">Designed by Finesse Digital Innovations</p><h2 id="t">Customise this template</h2><p class="sub">Tell us about your business. Your message opens in WhatsApp, already written.</p>'
++'<label for="n">Your name</label><input id="n" autocomplete="name"><label for="b">Business name</label><input id="b" autocomplete="organization">'
++'<label for="m">Anything else? (optional)</label><textarea id="m" rows="3"></textarea><p class="hint" id="h" role="alert"></p>'
++'<div class="row"><a class="p" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="s" id="em">Send by email</a></div>'
++'<p class="foot"><a href="'+SITE+'" target="_blank" rel="noopener">Visit our website</a> \u00b7 '+SHOW+'</p></div></div>';
+document.body.appendChild(host);
+var g=function(id){return root.getElementById(id)};
+function v(id){return g(id).value.trim()}
+function msg(){var n=v('n'),b=v('b'),m=v('m');return 'Hello Finesse Digital Innovations,\n\nMy name is '+(n||'(your name)')+'.'+(b?'\nMy business: '+b+'.':'')+'\nI would like to customise the '+tname+' for my business.'+(m?'\n\n'+m:'')}
+function upd(){var m=msg();g('wa').href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m);g('em').href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Template enquiry: '+tname)+'&body='+encodeURIComponent(m)}
+function guard(e){if(!v('n')){e.preventDefault();g('h').textContent='Please add your name so we know who to reply to.';g('n').focus()}else g('h').textContent=''}
+root.addEventListener('input',function(){upd();if(v('n'))g('h').textContent=''});
+g('wa').addEventListener('click',guard);g('em').addEventListener('click',guard);
+root.querySelector('.x').addEventListener('click',close);
+root.querySelector('.bk').addEventListener('click',function(e){if(e.target.classList.contains('bk'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&host.style.display!=='none')close()});
+upd();}
+function open(){if(!host)build();opener=document.activeElement;host.style.display='block';setTimeout(function(){root.getElementById('n').focus()},30)}
+function close(){host.style.display='none';if(opener&&opener.focus)try{opener.focus()}catch(e){}}
+window.lead=open;
+})();
+</script>
+</body></html>

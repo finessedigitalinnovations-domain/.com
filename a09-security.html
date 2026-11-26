@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>A9 · Security Company Template — BastionGuard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#eef0f3;--sf:#fff;--alt:#e2e5ea;--tx:#12151a;--mu:#5b626d;--bd:#d2d6dd;--bk:#0b0d10;--rd:#e5322d;--st:#8a94a3;--gn:#22c55e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b0d10;--sf:#14181d;--alt:#101317;--tx:#eceff3;--mu:#98a1ae;--bd:#242a32;--bk:#050607;--rd:#ff4d47;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:120px}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif}
+a{color:inherit;text-decoration:none}.w{max-width:1070px;margin:auto;padding:0 18px}.mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+.ban{background:var(--rd);color:#fff;font-size:12px;font-weight:700;padding:7px 12px;text-align:center}.ban a{text-decoration:underline;cursor:pointer}
+.em{background:var(--bk);color:#cdd3dc;font-size:13px;text-align:center;padding:6px 12px;border-bottom:1px solid #20252c}.em b{color:var(--rd)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bk);color:#fff;z-index:10;border-bottom:1px solid #20252c}
+nav .w{display:flex;align-items:center;justify-content:space-between;min-height:62px;padding-block:8px;gap:8px 10px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:19px;letter-spacing:2px;white-space:nowrap;line-height:1.2;display:flex;align-items:center;gap:8px;text-transform:uppercase}.logo b{color:var(--rd)}
+.links{display:flex;gap:2px;overflow-x:auto}.links a{padding:8px 12px;font-size:12.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8a94a3;white-space:nowrap;border-bottom:2px solid transparent}.links a.on{color:#fff;border-color:var(--rd)}
+.btn{display:inline-block;border:0;border-radius:4px;padding:12px 20px;font:inherit;font-weight:800;font-size:13.5px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;background:var(--rd);color:#fff}.btn.g{background:transparent;color:inherit;box-shadow:0 0 0 1px currentColor inset}.btn.s{background:#2a3038;color:#fff}
+.hero{background:radial-gradient(700px 320px at 85% 10%,rgba(229,50,45,.25),transparent),linear-gradient(#0b0d10,#12161b);color:#fff;padding:56px 0 50px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 4px);pointer-events:none}
+.hero .w{position:relative}.hero .g2{align-items:center}.hero small.k{color:var(--rd);font-weight:800;letter-spacing:3px}.hero h1{font-size:clamp(34px,7vw,60px);line-height:1.04;margin:10px 0 14px;letter-spacing:-1.2px;text-transform:uppercase}.hero h1 em{font-style:normal;color:var(--rd)}.hero p{max-width:480px;color:#aab3c0;margin:0 0 22px}
+.ctl{background:#0e1115;border:1px solid #262c34;border-radius:10px;overflow:hidden;color:#cdd3dc}.ctl .h{display:flex;justify-content:space-between;padding:10px 14px;background:#151a20;font-size:12px;letter-spacing:1px;text-transform:uppercase}.ctl .h span:first-child:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gn);margin-right:8px;animation:bl 1.4s infinite}@keyframes bl{50%{opacity:.25}}
+.ctl .l{padding:8px 14px;min-height:196px;font-size:12.5px}.ctl .l div{padding:4px 0;border-bottom:1px dashed #20262d;display:flex;gap:10px}.ctl .l time{color:#6b7482;flex:none}.ctl .ok{color:var(--gn)}.ctl .wn{color:#f5b042}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--sf);border-bottom:1px solid var(--bd)}.stats div{padding:22px 12px;text-align:center;border-right:1px solid var(--bd)}.stats div:last-child{border:0}.stats b{display:block;font-size:26px;color:var(--rd)}.stats small{color:var(--mu);text-transform:uppercase;letter-spacing:1px;font-size:11px}
+section{padding:50px 0}section.alt{background:var(--alt)}h2{font-size:30px;margin:0 0 6px;letter-spacing:-.5px;text-transform:uppercase}h2:after{content:"";display:block;width:46px;height:4px;background:var(--rd);margin-top:8px}.sub{color:var(--mu);margin:12px 0 24px;max-width:560px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:20px}.card h3{margin:6px 0;font-size:17px;text-transform:uppercase;letter-spacing:.5px}.card p{margin:0;color:var(--mu);font-size:14.5px}.ic{font-size:28px}
+.tag{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:var(--rd)}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:14px}.tab{flex:none;border:1px solid var(--bd);background:var(--sf);color:var(--tx);padding:8px 14px;border-radius:4px;font:inherit;font-weight:700;font-size:13px;letter-spacing:.5px;cursor:pointer;text-transform:uppercase}.tab.on{background:var(--rd);border-color:var(--rd);color:#fff}
+.cams{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.cam{position:relative;aspect-ratio:16/10;background:#050607;border:1px solid #262c34;border-radius:6px;overflow:hidden;cursor:pointer;padding:0;color:#d7dde6;text-align:left}.cam canvas{position:absolute;inset:0;width:100%;height:100%}.cam.on{box-shadow:0 0 0 2px var(--rd)}
+.cam .t{position:absolute;left:8px;top:6px;font:11px ui-monospace,Menlo,monospace;text-shadow:0 1px 2px #000}.cam .r{position:absolute;right:8px;top:6px;font:700 11px ui-monospace,monospace;color:var(--rd)}.cam .r:before{content:"● "}.cam .b{position:absolute;left:8px;bottom:6px;font:11px ui-monospace,monospace;text-shadow:0 1px 2px #000}
+.al{display:none;position:absolute;border:2px solid var(--rd);border-radius:3px}.al.on{display:block}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.kv div{background:var(--alt);padding:10px;border-radius:6px;text-align:center}.kv b{display:block;font-size:15px}.kv small{color:var(--mu);font-size:11px;text-transform:uppercase}
+.bar{display:flex;gap:6px;margin-bottom:16px}.bar i{flex:1;height:4px;background:var(--bd)}.bar i.on{background:var(--rd)}
+.opt{display:block;width:100%;text-align:left;padding:13px 14px;border:1px solid var(--bd);border-radius:6px;background:var(--sf);color:var(--tx);font:inherit;margin-bottom:8px;cursor:pointer}.opt.on{border-color:var(--rd);box-shadow:0 0 0 2px var(--rd) inset}
+.gauge{height:14px;background:var(--bd);border-radius:9px;overflow:hidden;margin:10px 0}.gauge i{display:block;height:100%;width:0;background:linear-gradient(90deg,#22c55e,#f5b042,var(--rd));transition:width 1s}
+input[type=text],input:not([type]),textarea{width:100%;padding:12px;border:1px solid var(--bd);border-radius:6px;background:var(--sf);color:var(--tx);font:inherit;margin-bottom:10px}
+.av{width:58px;height:58px;border-radius:8px;background:#1a1f26;color:var(--rd);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;margin-bottom:8px;border:1px solid #2c333c}
+footer{background:var(--bk);color:#8a94a3;padding:34px 0;font-size:14px}footer b{color:#fff;letter-spacing:1px}
+.fab{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;max-width:250px;background:var(--rd);color:#fff;border:0;border-radius:6px;padding:10px 14px;font:700 12.5px "Segoe UI",system-ui,sans-serif;text-align:left;box-shadow:0 8px 24px rgba(229,50,45,.45);cursor:pointer}
+.md{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:50;display:none;align-items:center;justify-content:center;padding:16px}.md.open{display:flex}.md>div{background:var(--sf);border-radius:10px;padding:20px;width:min(420px,100%);border-top:4px solid var(--rd)}
+.pg{display:none}.pg.on{display:block}
+@media(max-width:760px){.g3,.g2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--bd)}nav .btn{display:none}.logo{flex:1;font-size:17px}.links{order:3;width:100%}}
+@media(prefers-reduced-motion:reduce){.ctl .h span:first-child:before{animation:none}}
+</style></head><body>
+<div class="ban">Security Company Template Demonstration — Click <a onclick="lead()">‘Customize for Your Business’</a> to make it yours. <span class="fdi-by">Designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a></span></div>
+<div class="em">24/7 Emergency Response: <b class="mono">+1 555 060 1111</b> · Average response time 6 minutes</div>
+<nav><div class="w"><a class="logo" href="#home">🛡️ Bastion<b>Guard</b></a><div class="links" id="nav"></div><a class="btn" href="#assess">Risk Assessment</a></div></nav>
+
+<div class="pg" id="p-home">
+<div class="hero"><div class="w g2"><div><small class="k mono">// 24/7 PROTECTION</small><h1>Security you can <em>trust</em> when it matters.</h1><p>Manned guarding, intelligent surveillance and rapid response for homes, businesses and critical sites.</p><a class="btn" href="#assess">Free Risk Assessment</a> <a class="btn g" href="#services">Our Services</a></div>
+<div class="ctl mono"><div class="h"><span>Control room · live</span><span id="ck"></span></div><div class="l" id="feed"></div></div></div></div>
+<div class="stats"><div><b>25+</b><small>Years protecting</small></div><div><b>1,800</b><small>Officers on duty</small></div><div><b>6 min</b><small>Avg. response</small></div><div><b>99.9%</b><small>Alarm uptime</small></div></div>
+<section><div class="w"><h2>Protection services</h2><p class="sub">Layered security tailored to your risk profile.</p><div class="g3" id="hs"></div></div></section>
+</div>
+
+<div class="pg" id="p-services"><section><div class="w"><h2>Services</h2><p class="sub">Select a service for scope, coverage and typical clients.</p><div class="tabs" id="stabs"></div><div class="card" id="spane"></div></div></section></div>
+
+<div class="pg" id="p-tech"><section><div class="w"><h2>Surveillance technology</h2><p class="sub">Tap a camera to inspect it. Live demo feed with motion detection.</p><div class="g2"><div class="cams" id="cams"></div><div class="card" id="cinfo"></div></div></div></section></div>
+
+<div class="pg" id="p-assess"><section><div class="w" style="max-width:600px"><h2>Site risk assessment</h2><p class="sub">Answer four quick questions to get a risk score and recommended protection plan.</p><div class="bar" id="bar"></div><div id="flow"></div></div></section></div>
+
+<div class="pg" id="p-about"><section><div class="w"><h2>About & certifications</h2><p class="sub">Licensed, insured and trained to the highest standards.</p><div class="g3" style="margin-bottom:24px"><div class="card"><div class="ic">📜</div><h3>Fully licensed</h3><p>State-registered with all officers vetted and background checked.</p></div><div class="card"><div class="ic">🎓</div><h3>Certified training</h3><p>First aid, conflict de-escalation and emergency response.</p></div><div class="card"><div class="ic">🛡️</div><h3>Insured</h3><p>$10M public liability and professional indemnity cover.</p></div></div><div class="g3" id="team"></div></div></section></div>
+
+<footer><div class="w"><b>BASTIONGUARD SECURITY</b><br>77 Sentinel Way, Metro City · +1 555 060 1111 · control@bastionguard.example<br><br>© 2026 BastionGuard. Licensed security provider.</div><div class="fdi-foot">Template designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a> &middot; WhatsApp <a href="https://wa.me/2348133490442" target="_blank" rel="noopener">+234 813 349 0442</a></div></footer>
+<button class="fab" onclick="lead()">Love this layout? Click here to customize this template for your business.</button>
+<div class="md" id="md"><div id="mb"></div></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const PG=[["home","Home"],["services","Services"],["tech","Technology"],["assess","Assessment"],["about","About"]];
+const SV=[["Manned Guarding","👮","Uniformed and plain-clothes officers for static posts, access control and reception.","Hourly or contract","15 min deployment","Offices, malls, estates"],["CCTV & Monitoring","📹","HD and AI-enabled cameras monitored from our 24/7 control room.","Cloud + on-site","Instant alerts","Retail, warehouses, homes"],["Alarm Response","🚨","Verified alarm monitoring with armed rapid-response units.","Monthly plan","6 min average","Homes, shops, banks"],["Mobile Patrols","🚓","Randomised patrols with GPS checkpoint proof.","Per visit or nightly","Real-time reports","Estates, depots, sites"],["Event Security","🎟️","Crowd management, VIP and perimeter control.","Per event","Planning included","Concerts, conferences, sports"],["Executive Protection","🕶️","Close protection, secure transport and travel risk planning.","Retainer","Advance planning","Executives, public figures"]];
+const FEED=[["ok","Site 18 armed — all zones secure"],["ok","Patrol 12 checkpoint 4 cleared"],["wn","Door contact fault — Site 07, tech dispatched"],["ok","Camera 22 motion verified: staff"],["ok","Escort completed — client safe"],["wn","Alarm trigger Site 31 — verifying via CCTV"],["ok","Response unit 3 on scene — false alarm"],["ok","Gate A access granted: contractor #884"],["ok","Perimeter sweep complete — Depot North"],["wn","Vehicle loitering reported — unit 6 dispatched"]];
+$("nav").innerHTML=PG.map(p=>`<a href="#${p[0]}" data-p="${p[0]}">${p[1]}</a>`).join("");
+$("hs").innerHTML=SV.map((s,i)=>`<a class="card" href="#services" onclick="svc(${i})"><div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p></a>`).join("");
+function svc(i){$("stabs").innerHTML=SV.map((s,j)=>`<button class="tab ${j==i?"on":""}" onclick="svc(${j})">${s[0]}</button>`).join("");const s=SV[i];$("spane").innerHTML=`<div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p><div class="kv"><div><b>${s[3]}</b><small>Pricing</small></div><div><b>${s[4]}</b><small>Deployment</small></div><div><b>${s[5]}</b><small>Typical clients</small></div></div><a class="btn" href="#assess">Assess my needs</a>`}svc(0);
+let fi=0;function tick(){const n=new Date(),t=n.toLocaleTimeString("en-US",{hour12:false});if($("ck"))$("ck").textContent=t;const f=$("feed");if(!f)return;if(n.getSeconds()%3==0||!f.children.length){const e=FEED[fi++%FEED.length];const d=document.createElement("div");d.innerHTML=`<time>${t}</time><span class="${e[0]}">${e[1]}</span>`;f.prepend(d);while(f.children.length>6)f.lastChild.remove()}}
+for(let i=0;i<5;i++){const e=FEED[fi++];const d=document.createElement("div");d.innerHTML=`<time>${new Date(Date.now()-(5-i)*47000).toLocaleTimeString("en-US",{hour12:false})}</time><span class="${e[0]}">${e[1]}</span>`;$("feed").prepend(d)}setInterval(tick,1000);
+const CAMS=[["CAM 01","Main Entrance","4K · AI person detection",0],["CAM 02","Parking Level 2","1080p · Plate recognition",1],["CAM 03","Warehouse Floor","1080p · Motion zones",2],["CAM 04","Perimeter East","Thermal · 60 m range",3]];let sc=0;
+$("cams").innerHTML=CAMS.map((c,i)=>`<button class="cam ${i==0?"on":""}" onclick="sel(${i})"><canvas id="cv${i}" width="320" height="200"></canvas><span class="t" id="ct${i}"></span><span class="r">REC</span><span class="b">${c[0]} · ${c[1]}</span><i class="al" id="al${i}"></i></button>`).join("");
+function sel(i){sc=i;document.querySelectorAll(".cam").forEach((e,j)=>e.classList.toggle("on",j==i));const c=CAMS[i];$("cinfo").innerHTML=`<span class="tag mono">${c[0]}</span><h3>${c[1]}</h3><p>${c[2]}</p><div class="kv"><div><b>Online</b><small>Status</small></div><div><b>30 days</b><small>Cloud storage</small></div><div><b>Night vision</b><small>Mode</small></div></div><p>Every camera streams to our control room, where trained operators verify alerts and dispatch response in seconds.</p><br><a class="btn" href="#assess">Get cameras quoted</a>`}sel(0);
+const seeds=[1,2,3,4];function draw(){CAMS.forEach((c,i)=>{const cv=$("cv"+i);if(!cv||!cv.offsetParent)return;const x=cv.getContext("2d"),t=Date.now()/1000;x.fillStyle="#0a0d10";x.fillRect(0,0,320,200);const g=x.createLinearGradient(0,0,0,200);g.addColorStop(0,"#16222c");g.addColorStop(1,"#0a1014");x.fillStyle=g;x.fillRect(0,0,320,200);x.strokeStyle="#223441";x.lineWidth=1;for(let k=0;k<8;k++){x.beginPath();x.moveTo(0,110+k*14);x.lineTo(320,110+k*14);x.stroke()}x.fillStyle="#1d2c38";for(let k=0;k<5;k++)x.fillRect(20+k*62+i*6,60-k%3*14,38,90+k%3*14);x.fillStyle="rgba(255,255,255,.05)";for(let k=0;k<60;k++)x.fillRect(Math.random()*320,Math.random()*200,1.5,1.5);const px=(Math.sin(t*.5+i*2)*.5+.5)*240+30;x.fillStyle="#3a5266";x.fillRect(px,120,14,40);x.beginPath();x.arc(px+7,112,8,0,7);x.fill();const m=Math.sin(t*.3+i)>.55;const a=$("al"+i);a.classList.toggle("on",m);if(m){a.style.left=(px-6)/320*100+"%";a.style.top="48%";a.style.width="12%";a.style.height="30%"}$("ct"+i).textContent=new Date().toLocaleString("en-US",{hour12:false,month:"short",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit"})+(m?"  ⚠ MOTION":"")})}setInterval(draw,200);
+const A={step:0,type:"",size:"",meas:new Set(),name:"",email:"",msg:""};
+const TY=[["Home / residential",20],["Retail or office",35],["Warehouse / industrial",50],["Event or public venue",55]],SZ=[["Small",5],["Medium",12],["Large",20]],ME=[["Alarm system",-10],["CCTV cameras",-10],["On-site guards",-15],["Controlled access",-10],["None of these",10]];
+function score(){let s=TY.find(t=>t[0]==A.type)?.[1]||0;s+=SZ.find(t=>t[0]==A.size)?.[1]||0;A.meas.forEach(i=>s+=ME[i][1]);return Math.max(8,Math.min(95,s+30))}
+function rec(s){return s>65?["Manned Guarding","CCTV & Monitoring","Alarm Response"]:s>40?["CCTV & Monitoring","Alarm Response","Mobile Patrols"]:["Alarm Response","CCTV & Monitoring"]}
+function flow(){$("bar").innerHTML=[0,1,2,3,4].map(i=>`<i class="${i<=A.step?"on":""}"></i>`).join("");let h="";
+if(A.step==0)h=`<b>1. What are we protecting?</b><br><br>`+TY.map(t=>`<button class="opt ${A.type==t[0]?"on":""}" onclick="A.type='${t[0]}';flow()">${t[0]}</button>`).join("")+`<button class="btn" onclick="nx()">Continue</button>`;
+if(A.step==1)h=`<b>2. Size of site</b><br><br>`+SZ.map(t=>`<button class="opt ${A.size==t[0]?"on":""}" onclick="A.size='${t[0]}';flow()">${t[0]}</button>`).join("")+`<button class="btn s" onclick="A.step=0;flow()">Back</button> <button class="btn" onclick="nx()">Continue</button>`;
+if(A.step==2)h=`<b>3. Current protection (select all)</b><br><br>`+ME.map((t,i)=>`<button class="opt ${A.meas.has(i)?"on":""}" onclick="A.meas.has(${i})?A.meas.delete(${i}):A.meas.add(${i});flow()">${t[0]}</button>`).join("")+`<button class="btn s" onclick="A.step=1;flow()">Back</button> <button class="btn" onclick="nx()">See my score</button>`;
+if(A.step==3){const s=score(),lv=s>65?"HIGH":s>40?"MODERATE":"LOW";h=`<div class="card"><span class="tag mono">RISK SCORE</span><h3 style="font-size:40px;margin:4px 0">${s}/100 · ${lv}</h3><div class="gauge"><i id="gg"></i></div><p>Recommended layers for your ${A.type.toLowerCase()}:</p><p style="margin:8px 0">${rec(s).map(r=>`<span class="tag" style="display:inline-block;border:1px solid var(--rd);padding:3px 8px;margin:2px">${r}</span>`).join("")}</p><br><button class="btn s" onclick="A.step=2;flow()">Back</button> <button class="btn" onclick="A.step=4;flow()">Get my free site survey</button></div>`;setTimeout(()=>{const g=$("gg");if(g)g.style.width=s+"%"},50)}
+if(A.step==4)h=`<b>5. Where should we send your plan?</b><br><br><input id="fn" placeholder="Full name or company" value="${A.name}"><input id="fe" placeholder="Phone or email" value="${A.email}"><textarea id="fm" rows="3" placeholder="Site address & concerns (confidential)">${A.msg}</textarea><button class="btn s" onclick="sv();A.step=3;flow()">Back</button> <button class="btn" onclick="sv();if(!A.name||!A.email)return alert('Name and contact required');A.step=5;flow()">Request survey</button>`;
+if(A.step==5)h=`<div class="card"><h3>Survey requested ✓</h3><p>Thank you, ${A.name}. A security consultant will contact you at ${A.email} within 24 hours to arrange a free on-site survey and a tailored quote. Your details stay confidential.</p></div>`;
+$("flow").innerHTML=h}
+function nx(){if(A.step==0&&!A.type||A.step==1&&!A.size)return alert("Please choose an option.");A.step++;flow()}
+function sv(){A.name=$("fn").value;A.email=$("fe").value;A.msg=$("fm").value}flow();
+$("team").innerHTML=[["Colonel R. Mathis (Ret.)","Chief Executive","Ex-military police · 30 yrs"],["Elena Vasquez","Director of Operations","Risk management · 18 yrs"],["Jamal Okoro","Head of Technology","Surveillance systems · 14 yrs"]].map(t=>`<div class="card"><div class="av">${t[0].replace(/[^A-Z ]/g,"").split(" ").filter(Boolean).map(x=>x[0]).slice(0,2).join("")}</div><h3>${t[0]}</h3><span class="tag">${t[1]}</span><p style="margin-top:6px">${t[2]}</p></div>`).join("");
+function lead(){$("mb").innerHTML=`<h3 style="margin:0 0 4px">Customize this template</h3><p style="color:var(--mu);margin:0 0 12px">Tell us about your business and we’ll get back to you.</p><input id="ln" placeholder="Your name"><input id="le" placeholder="Email or WhatsApp"><textarea id="lm" rows="3" placeholder="Business name & what you do"></textarea><button class="btn" style="width:100%" onclick="ls()">Request consultation</button><button class="btn g" style="width:100%;margin-top:10px" onclick="$('md').classList.remove('open')">Cancel</button>`;$("md").classList.add("open")}
+function ls(){$("mb").innerHTML=$("ln").value&&$("le").value?`<h3>Thanks, ${$("ln").value}! ✓</h3><p style="color:var(--mu)">Request noted. (Demo form — connect to email/WhatsApp/CRM before launch.)</p><button class="btn" style="width:100%" onclick="$('md').classList.remove('open')">Done</button>`:`<p>Please add your name and contact.</p><button class="btn" onclick="lead()">Back</button>`}
+function route(){const h=(location.hash||"#home").slice(1);const p=PG.some(x=>x[0]==h)?h:"home";document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id=="p-"+p));document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.p==p));window.scrollTo(0,0)}
+addEventListener("hashchange",route);route();
+</script><!-- fdi-branding -->
+<style>
+.fdi-by{margin-left:.55em;white-space:nowrap}
+.fdi-by a{font-weight:700}
+.fdi-foot{padding:14px 18px calc(14px + env(safe-area-inset-bottom,0px));text-align:center;font:600 12.5px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif;color:inherit;opacity:.92;border-top:1px solid rgba(128,128,128,.3)}
+.fdi-foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+</style>
+<script>
+(function(){
+var SITE='https://finessedigitalinnovations-domain.github.io/.com',NUM='2348133490442',EMAIL='finessedigitalinnovations@gmail.com',SHOW='+234 813 349 0442';
+var tname=(document.title.split(' \u2014 ')[0]||document.title).replace(' \u00b7 ',' ');
+var host,root,opener;
+var CSS=".bk{position:fixed;inset:0;background:rgba(5,10,25,.68);display:flex;align-items:center;justify-content:center;padding:16px;font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif}"
++".card{position:relative;background:#fff;color:#0A1330;width:min(440px,100%);max-height:92vh;overflow:auto;border-radius:16px;padding:24px;border-top:5px solid #14D87C;box-shadow:0 24px 60px rgba(0,0,0,.4)}"
++".x{position:absolute;right:10px;top:10px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(128,128,128,.18);color:inherit;font-size:20px;cursor:pointer}"
++".by{margin:0 0 4px;font-size:12.5px;font-weight:700;letter-spacing:.02em;color:#067A45}h2{margin:0 0 6px;font-size:1.45rem;line-height:1.15}.sub{margin:0 0 14px;font-size:.95rem;opacity:.8}"
++"label{display:block;font-weight:700;font-size:.9rem;margin:10px 0 4px}input,textarea{width:100%;box-sizing:border-box;font:inherit;color:inherit;background:#F4F7FC;border:1.5px solid #D3DCEE;border-radius:10px;padding:.65rem .8rem}input:focus,textarea:focus{outline:3px solid #0A57D6;outline-offset:1px}"
++".hint{min-height:1.3em;margin:8px 0 0;color:#B42318;font-size:.9rem}.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}"
++".p,.s{flex:1 1 150px;text-align:center;text-decoration:none;font-weight:700;padding:.75rem 1rem;border-radius:12px;border:2px solid #0A1330;color:#0A1330;cursor:pointer}.p{background:#14D87C;border-color:#14D87C;color:#052214}.p:hover{background:#0FC470}.s:hover{background:#0A1330;color:#fff}"
++".foot{margin:14px 0 0;text-align:center;font-size:.85rem;opacity:.8}.foot a{color:inherit}"
++"@media(prefers-color-scheme:dark){.card{background:#0E1733;color:#EAF0FF}input,textarea{background:#070D20;border-color:#2A3A6A}.by{color:#43E59A}.hint{color:#FF9B8F}.s{border-color:#EAF0FF;color:#EAF0FF}.s:hover{background:#EAF0FF;color:#0A1330}}";
+function build(){
+host=document.createElement('div');host.id='fdi-lead';host.style.cssText='position:fixed;inset:0;z-index:2147483000;display:none';
+root=host.attachShadow({mode:'open'});
+root.innerHTML='<style>'+CSS+'</style><div class="bk"><div class="card" role="dialog" aria-modal="true" aria-labelledby="t"><button class="x" type="button" aria-label="Close">\u00d7</button>'
++'<p class="by">Designed by Finesse Digital Innovations</p><h2 id="t">Customise this template</h2><p class="sub">Tell us about your business. Your message opens in WhatsApp, already written.</p>'
++'<label for="n">Your name</label><input id="n" autocomplete="name"><label for="b">Business name</label><input id="b" autocomplete="organization">'
++'<label for="m">Anything else? (optional)</label><textarea id="m" rows="3"></textarea><p class="hint" id="h" role="alert"></p>'
++'<div class="row"><a class="p" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="s" id="em">Send by email</a></div>'
++'<p class="foot"><a href="'+SITE+'" target="_blank" rel="noopener">Visit our website</a> \u00b7 '+SHOW+'</p></div></div>';
+document.body.appendChild(host);
+var g=function(id){return root.getElementById(id)};
+function v(id){return g(id).value.trim()}
+function msg(){var n=v('n'),b=v('b'),m=v('m');return 'Hello Finesse Digital Innovations,\n\nMy name is '+(n||'(your name)')+'.'+(b?'\nMy business: '+b+'.':'')+'\nI would like to customise the '+tname+' for my business.'+(m?'\n\n'+m:'')}
+function upd(){var m=msg();g('wa').href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m);g('em').href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Template enquiry: '+tname)+'&body='+encodeURIComponent(m)}
+function guard(e){if(!v('n')){e.preventDefault();g('h').textContent='Please add your name so we know who to reply to.';g('n').focus()}else g('h').textContent=''}
+root.addEventListener('input',function(){upd();if(v('n'))g('h').textContent=''});
+g('wa').addEventListener('click',guard);g('em').addEventListener('click',guard);
+root.querySelector('.x').addEventListener('click',close);
+root.querySelector('.bk').addEventListener('click',function(e){if(e.target.classList.contains('bk'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&host.style.display!=='none')close()});
+upd();}
+function open(){if(!host)build();opener=document.activeElement;host.style.display='block';setTimeout(function(){root.getElementById('n').focus()},30)}
+function close(){host.style.display='none';if(opener&&opener.focus)try{opener.focus()}catch(e){}}
+window.lead=open;
+})();
+</script>
+</body></html>

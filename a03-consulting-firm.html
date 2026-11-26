@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>A3 · Consulting Firm Template — Hartwell & Vance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#faf7f0;--sf:#fff;--alt:#f0ebdd;--tx:#12261d;--mu:#5d6b63;--bd:#ddd6c2;--gr:#0f3d2e;--au:#b8893a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b1812;--sf:#12241b;--alt:#0f1f17;--tx:#f2eee2;--mu:#a3b1a8;--bd:#25382d;--gr:#1d6b4f;--au:#d9ab58;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:110px}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Georgia,"Times New Roman",serif}
+h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:600}.ui,.links a,.btn,.tab,.tag,.opt,input,textarea,small,.ban{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-decoration:none}.w{max-width:1060px;margin:auto;padding:0 20px}
+.ban{background:var(--gr);color:#f2eee2;font-size:12px;padding:7px 12px;text-align:center}.ban a{text-decoration:underline;color:var(--au);cursor:pointer;font-weight:600}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--bd);z-index:10}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:10px}
+.logo{font-size:19px;letter-spacing:.2px}.logo span{color:var(--au);font-style:italic}
+.links{display:flex;gap:2px;overflow-x:auto}.links a{padding:8px 11px;font-size:14px;color:var(--mu);white-space:nowrap;border-bottom:2px solid transparent}.links a.on{color:var(--tx);border-color:var(--au);font-weight:600}
+.btn{display:inline-block;border:0;border-radius:2px;padding:12px 20px;font-size:14px;font-weight:600;letter-spacing:.4px;cursor:pointer;background:var(--gr);color:#f2eee2}.btn.au{background:var(--au);color:#12261d}.btn.g{background:transparent;color:var(--tx);border:1px solid var(--tx)}
+.hero{background:var(--gr);color:#f2eee2;padding:74px 0 64px;position:relative}.hero:after{content:"";position:absolute;right:0;top:0;bottom:0;width:38%;background:repeating-linear-gradient(135deg,rgba(184,137,58,.14) 0 2px,transparent 2px 22px)}
+.hero .w{position:relative;z-index:1}.hero small{letter-spacing:3px;color:var(--au);text-transform:uppercase;font-weight:600}.hero h1{font-size:clamp(32px,6vw,56px);line-height:1.12;margin:12px 0 16px;max-width:720px}.hero p{max-width:540px;opacity:.85;margin:0 0 24px}
+.num{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-block:1px solid var(--bd);background:var(--sf)}.num div{padding:22px 16px;text-align:center;border-right:1px solid var(--bd)}.num div:last-child{border:0}.num b{display:block;font-size:30px;color:var(--gr);font-family:Georgia,serif}.num small{color:var(--mu)}
+@media(prefers-color-scheme:dark){.num b{color:var(--au)}}
+section{padding:52px 0}section.alt{background:var(--alt)}h2{font-size:32px;margin:0 0 8px;line-height:1.2}.sub{color:var(--mu);margin:0 0 26px;max-width:560px}
+.rule{width:48px;height:3px;background:var(--au);margin-bottom:14px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--sf);border:1px solid var(--bd);padding:22px}.card h3{margin:6px 0 8px;font-size:19px}.card p{margin:0;color:var(--mu);font-size:15px}
+.tag{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:var(--au)}
+.mx{width:100%;border-collapse:collapse;background:var(--sf);font-family:system-ui,sans-serif;font-size:14px}.mx th,.mx td{border:1px solid var(--bd);padding:0;text-align:center}.mx th{padding:10px;background:var(--alt);font-weight:600;font-size:12.5px}.mx th:first-child{text-align:left}
+.mx td button{width:100%;padding:14px 6px;border:0;background:transparent;color:var(--tx);cursor:pointer;font:inherit}.mx td button:hover,.mx td button.on{background:var(--gr);color:#f2eee2}.mx td:first-child{text-align:left;padding:10px;font-weight:600}
+.ov{overflow-x:auto}
+.det{margin-top:14px;background:var(--sf);border-left:4px solid var(--au);padding:18px 20px;font-family:system-ui,sans-serif;font-size:15px}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:18px}.tab{flex:none;border:1px solid var(--bd);background:var(--sf);color:var(--tx);padding:8px 15px;font-size:13.5px;cursor:pointer}.tab.on{background:var(--gr);color:#f2eee2;border-color:var(--gr)}
+.pj .k{font-size:34px;color:var(--gr);font-family:Georgia,serif}@media(prefers-color-scheme:dark){.pj .k{color:var(--au)}}
+.av{width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--gr);color:var(--au);font-size:22px;margin-bottom:10px;border:2px solid var(--au)}
+.q{font-size:20px;line-height:1.5;font-style:italic;max-width:700px}
+.bar{display:flex;gap:6px;margin-bottom:18px}.bar i{flex:1;height:4px;background:var(--bd)}.bar i.on{background:var(--au)}
+.opt{display:block;width:100%;text-align:left;padding:13px 14px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:15px;margin-bottom:8px;cursor:pointer}.opt.on{border-color:var(--gr);box-shadow:0 0 0 2px var(--gr) inset}
+input,textarea{width:100%;padding:12px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:15px;margin-bottom:10px}
+footer{background:var(--gr);color:#cfd8d0;padding:34px 0;font-size:14px;font-family:system-ui,sans-serif}footer b{color:#fff;font-family:Georgia,serif;font-size:17px}
+.fab{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;max-width:250px;background:var(--au);color:#12261d;border:0;padding:10px 14px;font:600 12.5px system-ui,sans-serif;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.3);cursor:pointer}
+.md{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;display:none;align-items:center;justify-content:center;padding:16px}.md.open{display:flex}.md>div{background:var(--bg);padding:22px;width:min(420px,100%)}
+.pg{display:none}.pg.on{display:block}
+@media(max-width:760px){.g3,.g2{grid-template-columns:1fr}.num{grid-template-columns:repeat(2,1fr)}.num div:nth-child(2){border-right:0}nav .btn{display:none}}
+</style></head><body>
+<div class="ban">Consulting Firm Template Demonstration — Click <a onclick="lead()">‘Customize for Your Business’</a> to make it yours. <span class="fdi-by">Designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a></span></div>
+<nav><div class="w"><a class="logo" href="#home">Hartwell <span>&</span> Vance</a><div class="links" id="nav"></div><a class="btn" href="#contact">Book a Consultation</a></div></nav>
+
+<div class="pg" id="p-home">
+<div class="hero"><div class="w"><small>Strategy · Operations · Transformation</small><h1>Clear thinking for complex decisions.</h1><p>We partner with leadership teams to solve their hardest problems and build organisations that outperform for years, not quarters.</p><a class="btn au" href="#contact">Book a Consultation</a> <a class="btn g" style="color:#f2eee2;border-color:#f2eee2" href="#expertise">Our Expertise</a></div></div>
+<div class="num"><div><b>30</b><small>Years of advisory</small></div><div><b>650+</b><small>Engagements</small></div><div><b>94%</b><small>Client retention</small></div><div><b>18</b><small>Industries served</small></div></div>
+<section><div class="w"><div class="rule"></div><h2>How we work</h2><p class="sub">A disciplined method, refined over three decades.</p><div class="g3" id="how"></div></div></section>
+<section class="alt"><div class="w"><div class="rule"></div><h2>Business health check</h2><p class="sub">Four questions. An instant read on where to focus first.</p><div id="quiz"></div></div></section>
+<section><div class="w"><div class="card" style="text-align:center"><p class="q" id="quote" style="margin:0 auto 12px"></p><small id="qa" style="color:var(--mu)"></small></div></div></section>
+</div>
+
+<div class="pg" id="p-expertise"><section><div class="w"><div class="rule"></div><h2>Expertise matrix</h2><p class="sub">Select any cell to see how we work at the intersection of an industry and a capability.</p><div class="ov"><table class="mx" id="mx"></table></div><div class="det" id="det">Tap a cell above.</div></div></section></div>
+
+<div class="pg" id="p-insights"><section><div class="w"><div class="rule"></div><h2>Case studies</h2><p class="sub">Selected engagements, filtered by capability.</p><div class="tabs" id="ftabs"></div><div class="g3" id="proj"></div></div></section>
+<section class="alt"><div class="w"><div class="rule"></div><h2>Latest insights</h2><div class="g3" id="ins"></div></div></section></div>
+
+<div class="pg" id="p-team"><section><div class="w"><div class="rule"></div><h2>Our partners</h2><p class="sub">Senior leaders who stay on your engagement from first meeting to final report.</p><div class="g3" id="team"></div></div></section></div>
+
+<div class="pg" id="p-contact"><section><div class="w" style="max-width:580px"><div class="rule"></div><h2>Book a consultation</h2><p class="sub">A complimentary 45-minute conversation with a senior partner.</p><div class="bar" id="bar"></div><div id="funnel"></div></div></section></div>
+
+<footer><div class="w"><b>Hartwell & Vance</b><br>One Meridian Plaza, Suite 2400, Capital City · +1 555 014 7788 · partners@hartwellvance.example<br><br>© 2026 Hartwell & Vance Advisory LLP.</div><div class="fdi-foot">Template designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a> &middot; WhatsApp <a href="https://wa.me/2348133490442" target="_blank" rel="noopener">+234 813 349 0442</a></div></footer>
+<button class="fab" onclick="lead()">Love this layout? Click here to customize this template for your business.</button>
+<div class="md" id="md"><div id="mb"></div></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const PG=[["home","Home"],["expertise","Expertise"],["insights","Case Studies"],["team","Partners"],["contact","Consultation"]];
+const CAP=["Strategy","Operations","Transformation","Finance"],IND=["Healthcare","Energy","Retail","Technology","Public Sector"];
+const CELL={"Strategy":"Market positioning, portfolio choices and long-range planning.","Operations":"Process redesign, supply chain and cost-to-serve improvement.","Transformation":"Programme leadership, change management and capability building.","Finance":"Capital allocation, performance management and deal support."};
+const HW=[["01","Diagnose","We start with evidence — interviews, data and observation — before forming a view."],["02","Design","Options are tested with your team so the answer is owned, not imposed."],["03","Deliver","We stay through implementation and hand over only when results are measurable."]];
+const PJ=[["Regional Health Network","Operations","31%","reduction in patient wait times"],["Energy Grid Operator","Strategy","$1.4B","investment roadmap approved"],["Omni Retail Group","Transformation","18 mo","to full operating-model change"],["Apex Software","Finance","2.2x","valuation uplift at exit"],["City Transit Authority","Operations","$42M","annual savings identified"],["Nordic Utilities","Strategy","4","new markets entered"]];
+const IN=[["Strategy","The three questions every board should ask in a downturn","6 min read"],["Operations","Why most cost programmes fail in year two","8 min read"],["Transformation","Leading change without burning out your best people","5 min read"]];
+const TM=[["Eleanor Hartwell","Managing Partner","Strategy · 28 yrs · English, French"],["Julian Vance","Senior Partner","Finance · 24 yrs · English, German"],["Sofia Marlowe","Partner","Operations · 17 yrs · English, Spanish"],["Dr. Kenji Arai","Partner","Technology · 15 yrs · English, Japanese"],["Naomi Clarke","Partner","Public Sector · 19 yrs · English"],["Idris Haddad","Principal","Transformation · 12 yrs · English, Arabic"]];
+const QT=[["They asked the questions we had avoided for years, then helped us answer them.","Chief Executive, Regional Health Network"],["The most rigorous and the most human advisors we have worked with.","Chair, Apex Software"]];
+const QZ=[["How clear is your strategy across the leadership team?","Strategy"],["How efficient are your core processes?","Operations"],["How ready is your organisation for change?","Transformation"],["How visible are your financial drivers?","Finance"]];
+$("nav").innerHTML=PG.map(p=>`<a href="#${p[0]}" data-p="${p[0]}">${p[1]}</a>`).join("");
+$("how").innerHTML=HW.map(h=>`<div class="card"><span class="tag">${h[0]}</span><h3>${h[1]}</h3><p>${h[2]}</p></div>`).join("");
+$("mx").innerHTML=`<tr><th></th>${CAP.map(c=>`<th>${c}</th>`).join("")}</tr>`+IND.map(i=>`<tr><td>${i}</td>${CAP.map(c=>`<td><button onclick="cell(this,'${i}','${c}')">＋</button></td>`).join("")}</tr>`).join("");
+function cell(b,i,c){document.querySelectorAll(".mx button").forEach(x=>x.classList.remove("on"));b.classList.add("on");$("det").innerHTML=`<span class="tag">${i} · ${c}</span><p style="margin:6px 0">${CELL[c]} Tailored to the realities of <b>${i.toLowerCase()}</b> organisations.</p><a class="btn" href="#contact" onclick="F.svc='${c} — ${i}'">Discuss this with a partner</a>`}
+let fl="All";function proj(){const c=["All",...new Set(PJ.map(p=>p[1]))];$("ftabs").innerHTML=c.map(x=>`<button class="tab ${x==fl?"on":""}" onclick="fl='${x}';proj()">${x}</button>`).join("");$("proj").innerHTML=PJ.filter(p=>fl=="All"||p[1]==fl).map(p=>`<div class="card pj"><span class="tag">${p[1]}</span><div class="k">${p[2]}</div><p>${p[3]}</p><h3 style="font-size:15px;margin-top:10px">${p[0]}</h3></div>`).join("")}proj();
+$("ins").innerHTML=IN.map(i=>`<div class="card"><span class="tag">${i[0]}</span><h3>${i[1]}</h3><small style="color:var(--mu)">${i[2]}</small></div>`).join("");
+$("team").innerHTML=TM.map(t=>`<div class="card"><div class="av">${t[0].split(" ").filter(x=>!x.endsWith(".")).map(x=>x[0]).join("")}</div><h3>${t[0]}</h3><span class="tag">${t[1]}</span><p style="margin-top:6px;font-family:system-ui,sans-serif;font-size:14px">${t[2]}</p></div>`).join("");
+let qi=0;function qt(){$("quote").textContent="“"+QT[qi][0]+"”";$("qa").textContent="— "+QT[qi][1];qi=(qi+1)%QT.length}qt();setInterval(qt,6000);
+let qs=[],qn=0;function quiz(){if(qn<4){$("quiz").innerHTML=`<div class="card"><small style="color:var(--mu)">Question ${qn+1} of 4</small><h3>${QZ[qn][0]}</h3>`+["Strong","Moderate","Needs work"].map((o,i)=>`<button class="opt" onclick="qs.push(${i});qn++;quiz()">${o}</button>`).join("")+`</div>`}else{let w=0;qs.forEach((v,i)=>{if(v>qs[w])w=i});const s=Math.round(100-qs.reduce((a,b)=>a+b,0)*12);$("quiz").innerHTML=`<div class="card"><span class="tag">Your result</span><h3>Health score: ${s}/100</h3><p>Priority area: <b>${QZ[w][1]}</b>. ${CELL[QZ[w][1]]}</p><br><a class="btn" href="#contact" onclick="F.svc='${QZ[w][1]}'">Discuss with a partner</a> <button class="btn g" onclick="qs=[];qn=0;quiz()">Retake</button></div>`}}quiz();
+const F={step:0,svc:"",size:"",name:"",email:"",msg:""};
+function funnel(){$("bar").innerHTML=[0,1,2].map(i=>`<i class="${i<=F.step?"on":""}"></i>`).join("");let h="";
+if(F.step==0)h=`<b class="ui">1. What would you like to discuss?</b><br><br>`+CAP.map(s=>`<button class="opt ${F.svc==s?"on":""}" onclick="F.svc='${s}';funnel()">${s}</button>`).join("")+`<button class="btn" onclick="nx()">Continue</button>`;
+if(F.step==1)h=`<b class="ui">2. Organisation size</b><br><br>`+["Under 100 people","100 – 1,000","1,000 – 10,000","10,000+"].map(s=>`<button class="opt ${F.size==s?"on":""}" onclick="F.size='${s}';funnel()">${s}</button>`).join("")+`<button class="btn g" onclick="F.step=0;funnel()">Back</button> <button class="btn" onclick="nx()">Continue</button>`;
+if(F.step==2)h=`<b class="ui">3. Your details</b><br><br><input id="fn" placeholder="Full name" value="${F.name}"><input id="fe" placeholder="Work email" value="${F.email}"><textarea id="fm" rows="3" placeholder="Brief description of the challenge">${F.msg}</textarea><button class="btn g" onclick="sv3();F.step=1;funnel()">Back</button> <button class="btn" onclick="sub()">Request consultation</button>`;
+if(F.step==3)h=`<div class="card"><h3>Thank you, ${F.name}.</h3><p>A partner will reach out to ${F.email} within one business day to arrange your ${F.svc} conversation.</p></div>`;
+$("funnel").innerHTML=h}
+function nx(){if(F.step==0&&!F.svc||F.step==1&&!F.size)return alert("Please choose an option.");F.step++;funnel()}
+function sv3(){F.name=$("fn").value;F.email=$("fe").value;F.msg=$("fm").value}
+function sub(){sv3();if(!F.name||!F.email)return alert("Name and email are required.");F.step=3;funnel()}funnel();
+function lead(){$("mb").innerHTML=`<h3 style="margin:0 0 4px">Customize this template</h3><p class="ui" style="color:var(--mu);margin:0 0 12px;font-size:14px">Tell us about your business and we’ll get back to you.</p><input id="ln" placeholder="Your name"><input id="le" placeholder="Email or WhatsApp"><textarea id="lm" rows="3" placeholder="Business name & what you do"></textarea><button class="btn" style="width:100%" onclick="ls()">Request consultation</button><button class="btn g" style="width:100%;margin-top:8px" onclick="$('md').classList.remove('open')">Cancel</button>`;$("md").classList.add("open")}
+function ls(){$("mb").innerHTML=$("ln").value&&$("le").value?`<h3>Thank you, ${$("ln").value}.</h3><p class="ui" style="color:var(--mu)">Request noted. (Demo form — connect to email/WhatsApp/CRM before launch.)</p><button class="btn" style="width:100%" onclick="$('md').classList.remove('open')">Done</button>`:`<p>Please add your name and contact.</p><button class="btn" onclick="lead()">Back</button>`}
+function route(){const h=(location.hash||"#home").slice(1);const p=PG.some(x=>x[0]==h)?h:"home";document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id=="p-"+p));document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.p==p));window.scrollTo(0,0)}
+addEventListener("hashchange",route);route();
+</script><!-- fdi-branding -->
+<style>
+.fdi-by{margin-left:.55em;white-space:nowrap}
+.fdi-by a{font-weight:700}
+.fdi-foot{padding:14px 18px calc(14px + env(safe-area-inset-bottom,0px));text-align:center;font:600 12.5px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif;color:inherit;opacity:.92;border-top:1px solid rgba(128,128,128,.3)}
+.fdi-foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+</style>
+<script>
+(function(){
+var SITE='https://finessedigitalinnovations-domain.github.io/.com',NUM='2348133490442',EMAIL='finessedigitalinnovations@gmail.com',SHOW='+234 813 349 0442';
+var tname=(document.title.split(' \u2014 ')[0]||document.title).replace(' \u00b7 ',' ');
+var host,root,opener;
+var CSS=".bk{position:fixed;inset:0;background:rgba(5,10,25,.68);display:flex;align-items:center;justify-content:center;padding:16px;font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif}"
++".card{position:relative;background:#fff;color:#0A1330;width:min(440px,100%);max-height:92vh;overflow:auto;border-radius:16px;padding:24px;border-top:5px solid #14D87C;box-shadow:0 24px 60px rgba(0,0,0,.4)}"
++".x{position:absolute;right:10px;top:10px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(128,128,128,.18);color:inherit;font-size:20px;cursor:pointer}"
++".by{margin:0 0 4px;font-size:12.5px;font-weight:700;letter-spacing:.02em;color:#067A45}h2{margin:0 0 6px;font-size:1.45rem;line-height:1.15}.sub{margin:0 0 14px;font-size:.95rem;opacity:.8}"
++"label{display:block;font-weight:700;font-size:.9rem;margin:10px 0 4px}input,textarea{width:100%;box-sizing:border-box;font:inherit;color:inherit;background:#F4F7FC;border:1.5px solid #D3DCEE;border-radius:10px;padding:.65rem .8rem}input:focus,textarea:focus{outline:3px solid #0A57D6;outline-offset:1px}"
++".hint{min-height:1.3em;margin:8px 0 0;color:#B42318;font-size:.9rem}.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}"
++".p,.s{flex:1 1 150px;text-align:center;text-decoration:none;font-weight:700;padding:.75rem 1rem;border-radius:12px;border:2px solid #0A1330;color:#0A1330;cursor:pointer}.p{background:#14D87C;border-color:#14D87C;color:#052214}.p:hover{background:#0FC470}.s:hover{background:#0A1330;color:#fff}"
++".foot{margin:14px 0 0;text-align:center;font-size:.85rem;opacity:.8}.foot a{color:inherit}"
++"@media(prefers-color-scheme:dark){.card{background:#0E1733;color:#EAF0FF}input,textarea{background:#070D20;border-color:#2A3A6A}.by{color:#43E59A}.hint{color:#FF9B8F}.s{border-color:#EAF0FF;color:#EAF0FF}.s:hover{background:#EAF0FF;color:#0A1330}}";
+function build(){
+host=document.createElement('div');host.id='fdi-lead';host.style.cssText='position:fixed;inset:0;z-index:2147483000;display:none';
+root=host.attachShadow({mode:'open'});
+root.innerHTML='<style>'+CSS+'</style><div class="bk"><div class="card" role="dialog" aria-modal="true" aria-labelledby="t"><button class="x" type="button" aria-label="Close">\u00d7</button>'
++'<p class="by">Designed by Finesse Digital Innovations</p><h2 id="t">Customise this template</h2><p class="sub">Tell us about your business. Your message opens in WhatsApp, already written.</p>'
++'<label for="n">Your name</label><input id="n" autocomplete="name"><label for="b">Business name</label><input id="b" autocomplete="organization">'
++'<label for="m">Anything else? (optional)</label><textarea id="m" rows="3"></textarea><p class="hint" id="h" role="alert"></p>'
++'<div class="row"><a class="p" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="s" id="em">Send by email</a></div>'
++'<p class="foot"><a href="'+SITE+'" target="_blank" rel="noopener">Visit our website</a> \u00b7 '+SHOW+'</p></div></div>';
+document.body.appendChild(host);
+var g=function(id){return root.getElementById(id)};
+function v(id){return g(id).value.trim()}
+function msg(){var n=v('n'),b=v('b'),m=v('m');return 'Hello Finesse Digital Innovations,\n\nMy name is '+(n||'(your name)')+'.'+(b?'\nMy business: '+b+'.':'')+'\nI would like to customise the '+tname+' for my business.'+(m?'\n\n'+m:'')}
+function upd(){var m=msg();g('wa').href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m);g('em').href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Template enquiry: '+tname)+'&body='+encodeURIComponent(m)}
+function guard(e){if(!v('n')){e.preventDefault();g('h').textContent='Please add your name so we know who to reply to.';g('n').focus()}else g('h').textContent=''}
+root.addEventListener('input',function(){upd();if(v('n'))g('h').textContent=''});
+g('wa').addEventListener('click',guard);g('em').addEventListener('click',guard);
+root.querySelector('.x').addEventListener('click',close);
+root.querySelector('.bk').addEventListener('click',function(e){if(e.target.classList.contains('bk'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&host.style.display!=='none')close()});
+upd();}
+function open(){if(!host)build();opener=document.activeElement;host.style.display='block';setTimeout(function(){root.getElementById('n').focus()},30)}
+function close(){host.style.display='none';if(opener&&opener.focus)try{opener.focus()}catch(e){}}
+window.lead=open;
+})();
+</script>
+</body></html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>A4 · Construction Company Template — IronCrest Builders</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f4f3ef;--sf:#fff;--alt:#e9e7df;--tx:#1b1d20;--mu:#5f646b;--bd:#d6d3c8;--ch:#202327;--yl:#ffc400;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141618;--sf:#1e2124;--alt:#191b1e;--tx:#f1f1ee;--mu:#a2a7ae;--bd:#30343a;--ch:#0e0f11;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:110px}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 "Arial Narrow",system-ui,-apple-system,Segoe UI,sans-serif}
+h1,h2,h3,.logo,.btn,.tab{font-family:Impact,"Arial Black",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.5px;font-weight:400}
+a{color:inherit;text-decoration:none}.w{max-width:1080px;margin:auto;padding:0 18px}
+.ban{background:var(--yl);color:#111;font-size:12px;padding:7px 12px;text-align:center;font-weight:700}.ban a{text-decoration:underline;cursor:pointer}
+.stripe{height:8px;background:repeating-linear-gradient(-45deg,var(--yl) 0 14px,#111 14px 28px)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--ch);color:#fff;z-index:10}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:10px}
+.logo{font-size:21px}.logo span{color:var(--yl)}
+.links{display:flex;gap:2px;overflow-x:auto}.links a{padding:8px 12px;font-size:13px;color:#b9bec5;white-space:nowrap;letter-spacing:.8px;text-transform:uppercase;font-weight:700}.links a.on{color:#111;background:var(--yl)}
+.btn{display:inline-block;border:0;padding:13px 22px;font-size:15px;cursor:pointer;background:var(--yl);color:#111;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}.btn.d{background:var(--ch);color:#fff}.btn.g{background:transparent;color:inherit;box-shadow:0 0 0 2px currentColor inset;clip-path:none}
+.hero{background:linear-gradient(rgba(20,22,24,.78),rgba(20,22,24,.92)),repeating-linear-gradient(0deg,transparent 0 39px,rgba(255,196,0,.12) 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,rgba(255,196,0,.12) 39px 40px),#202327;color:#fff;padding:70px 0 54px}
+.hero small{color:var(--yl);letter-spacing:3px;font-weight:700}.hero h1{font-size:clamp(38px,8vw,76px);line-height:1;margin:10px 0 14px;max-width:760px}.hero h1 em{font-style:normal;color:var(--yl)}.hero p{max-width:520px;color:#cdd1d6;margin:0 0 24px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--yl);color:#111}.stats div{padding:20px 14px;text-align:center;border-right:2px solid #111}.stats div:last-child{border:0}.stats b{font:400 34px Impact,sans-serif;display:block}.stats small{font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:1px}
+section{padding:48px 0}section.alt{background:var(--alt)}h2{font-size:34px;margin:0 0 6px;line-height:1.1}h2:after{content:"";display:block;width:56px;height:6px;background:var(--yl);margin-top:8px}.sub{color:var(--mu);margin:12px 0 24px;max-width:560px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.card{background:var(--sf);border:1px solid var(--bd);border-top:5px solid var(--yl);padding:18px}.card h3{margin:6px 0;font-size:19px}.card p{margin:0;color:var(--mu);font-size:15px}.ic{font-size:30px}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:16px}.tab{flex:none;border:2px solid var(--ch);background:transparent;color:var(--tx);padding:8px 14px;font-size:13px;cursor:pointer}.tab.on{background:var(--ch);color:var(--yl)}
+@media(prefers-color-scheme:dark){.tab{border-color:var(--bd)}.tab.on{background:var(--yl);color:#111}}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.gi{position:relative;border:0;padding:0;background:var(--ch);cursor:pointer;overflow:hidden;text-align:left;aspect-ratio:4/3;color:#fff}.gi svg{width:100%;height:100%;display:block;transition:transform .4s}.gi:hover svg{transform:scale(1.06)}
+.gi span{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:14px;font-weight:700}.gi small{display:block;color:var(--yl);font-size:11px;letter-spacing:1px;text-transform:uppercase}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:60;display:none;align-items:center;justify-content:center;padding:14px}.lb.open{display:flex}.lb>div{background:var(--sf);max-width:640px;width:100%;max-height:92vh;overflow:auto}.lb svg{width:100%;display:block}.lb .in{padding:18px}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.kv div{background:var(--alt);padding:10px;text-align:center}.kv b{display:block;font:400 18px Impact,sans-serif}.kv small{color:var(--mu);font-size:11px;text-transform:uppercase}
+.est{background:var(--ch);color:#fff;padding:20px}.est label{display:block;margin:10px 0 4px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#b9bec5}input[type=range]{width:100%;accent-color:var(--yl)}
+.res b{font:400 38px Impact,sans-serif;color:var(--yl);display:block;margin-top:6px}
+.tl{border-left:4px solid var(--yl);padding-left:14px}.tl div{margin-bottom:14px}.tl b{font-family:Impact,sans-serif;font-weight:400;text-transform:uppercase}
+.av{width:62px;height:62px;background:var(--ch);color:var(--yl);display:flex;align-items:center;justify-content:center;font:400 22px Impact,sans-serif;margin-bottom:8px}
+.bar{display:flex;gap:6px;margin-bottom:18px}.bar i{flex:1;height:6px;background:var(--bd)}.bar i.on{background:var(--yl)}
+.opt{display:block;width:100%;text-align:left;padding:13px 14px;border:2px solid var(--bd);background:var(--sf);color:var(--tx);font:inherit;margin-bottom:8px;cursor:pointer}.opt.on{border-color:var(--yl);background:var(--alt)}
+input[type=text],input:not([type]),textarea,select{width:100%;padding:12px;border:2px solid var(--bd);background:var(--sf);color:var(--tx);font:inherit;margin-bottom:10px;border-radius:0}
+footer{background:var(--ch);color:#b9bec5;padding:32px 0;font-size:14px}footer b{color:#fff}
+.fab{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;max-width:250px;background:var(--yl);color:#111;border:0;padding:10px 14px;font:700 12.5px system-ui,sans-serif;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.4);cursor:pointer;border-left:6px solid #111}
+.md{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:70;display:none;align-items:center;justify-content:center;padding:16px}.md.open{display:flex}.md>div{background:var(--sf);padding:22px;width:min(420px,100%);border-top:6px solid var(--yl)}
+.pg{display:none}.pg.on{display:block}
+@media(max-width:760px){.g3,.g2{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:2px solid #111}nav .btn{display:none}}
+</style></head><body>
+<div class="ban">Construction Company Template Demonstration — Click <a onclick="lead()">‘Customize for Your Business’</a> to make it yours. <span class="fdi-by">Designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a></span></div>
+<nav><div class="w"><a class="logo" href="#home">Iron<span>Crest</span> Builders</a><div class="links" id="nav"></div><a class="btn" href="#quote">Free Quote</a></div></nav><div class="stripe"></div>
+
+<div class="pg" id="p-home">
+<div class="hero"><div class="w"><small>BUILDING SINCE 1994</small><h1>We build what <em>lasts.</em></h1><p>Residential, commercial and industrial construction delivered on time, on budget and to the highest safety standard.</p><a class="btn" href="#quote">Get a Free Quote</a> <a class="btn g" href="#projects">View Projects</a></div></div>
+<div class="stats"><div><b data-n="30">0</b><small>Years</small></div><div><b data-n="420">0</b><small>Projects built</small></div><div><b data-n="1850">0</b><small>Safe days streak</small></div><div><b data-n="98">0</b><small>% on-time delivery</small></div></div>
+<section><div class="w"><h2>Our services</h2><p class="sub">From the first survey to the final handover.</p><div class="g3" id="hs"></div></div></section>
+<section class="alt"><div class="w"><h2>Featured projects</h2><p class="sub">&nbsp;</p><div class="gal" id="feat"></div></div></section>
+</div>
+
+<div class="pg" id="p-services"><section><div class="w"><h2>What we build</h2><p class="sub">Tap a service for scope and process.</p><div class="tabs" id="stabs"></div><div class="g2"><div class="card" id="spane"></div><div class="tl" id="tl"></div></div></div></section>
+<section class="alt"><div class="w"><h2>Cost estimator</h2><p class="sub">A quick, non-binding ballpark for your build.</p><div class="g2"><div class="est"><label>Project type</label><div class="tabs" id="et"></div><label>Floor area: <b id="av" style="color:#ffc400"></b></label><input type="range" id="area" min="50" max="5000" step="50" value="400" oninput="est()"><label>Finish level</label><div class="tabs" id="ef"></div></div><div class="card res"><small>ESTIMATED BUDGET</small><b id="ev"></b><p id="ed"></p><br><a class="btn" href="#quote">Get exact quote</a></div></div></div></section></div>
+
+<div class="pg" id="p-projects"><section><div class="w"><h2>Project galleries</h2><p class="sub">Tap any project for details, timeline and scale.</p><div class="tabs" id="ftabs"></div><div class="gal" id="gal"></div></div></section></div>
+
+<div class="pg" id="p-team"><section><div class="w"><h2>Leadership & safety</h2><p class="sub">Licensed, insured and obsessive about getting everyone home safe.</p><div class="g3" id="team"></div></div></section>
+<section class="alt"><div class="w"><div class="g3"><div class="card"><div class="ic">🦺</div><h3>Zero-harm policy</h3><p>Daily toolbox talks and independent site audits.</p></div><div class="card"><div class="ic">📜</div><h3>Fully certified</h3><p>ISO 9001, ISO 45001 and registered contractor licences.</p></div><div class="card"><div class="ic">🛡️</div><h3>10-year warranty</h3><p>Structural guarantee on every completed build.</p></div></div></div></section></div>
+
+<div class="pg" id="p-quote"><section><div class="w" style="max-width:580px"><h2>Request a quote</h2><p class="sub">Three steps. Site visit within 48 hours.</p><div class="bar" id="bar"></div><div id="funnel"></div></div></section></div>
+
+<footer><div class="w"><b>IronCrest Builders Ltd.</b><br>200 Foundry Road, Industrial District · +1 555 018 4400 · build@ironcrest.example<br><br>© 2026 IronCrest Builders. Licensed & insured.</div><div class="fdi-foot">Template designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a> &middot; WhatsApp <a href="https://wa.me/2348133490442" target="_blank" rel="noopener">+234 813 349 0442</a></div></footer>
+<button class="fab" onclick="lead()">Love this layout? Click here to customize this template for your business.</button>
+<div class="lb" id="lb" onclick="if(event.target==this)this.classList.remove('open')"><div id="lbc"></div></div>
+<div class="md" id="md"><div id="mb"></div></div>
+
+<script>
+const $=id=>document.getElementById(id),M=n=>"$"+Math.round(n).toLocaleString("en-US");
+const PG=[["home","Home"],["services","Services"],["projects","Projects"],["team","About"],["quote","Quote"]];
+const SV=[["Residential","🏠","Custom homes, estates and multi-unit developments.",["Site survey & permits","Foundation & structure","Fit-out & landscaping","Handover & warranty"],1100],
+["Commercial","🏢","Offices, retail and mixed-use buildings.",["Feasibility & design","Core & shell","Interior fit-out","Commissioning"],1600],
+["Industrial","🏭","Warehouses, plants and logistics facilities.",["Site preparation","Steel & slab","MEP installation","Certification"],900],
+["Infrastructure","🌉","Roads, bridges, drainage and utilities.",["Survey & geotech","Earthworks","Structures","Inspection"],2100],
+["Renovation","🔨","Refurbishment, extension and restoration.",["Condition survey","Strip-out","Rebuild","Finishing"],800],
+["Project Management","📐","Independent delivery, cost control and oversight.",["Brief & budget","Procurement","Site supervision","Close-out"],0]];
+const PJ=[["Harbor View Residences","Residential",1,"48 units","14 months","$32M"],["Summit Office Tower","Commercial",2,"22 floors","26 months","$120M"],["Northgate Distribution Hub","Industrial",3,"60,000 m²","11 months","$54M"],["Riverside Bridge","Infrastructure",4,"380 m span","30 months","$88M"],["Oakline Villas","Residential",5,"12 homes","10 months","$14M"],["Central Plaza Retail","Commercial",6,"3 levels","16 months","$41M"],["PowerCore Plant","Industrial",7,"Heavy plant","20 months","$76M"],["Metro Drainage Upgrade","Infrastructure",8,"18 km","18 months","$29M"],["Heritage Court Restoration","Renovation",9,"Grade-listed","9 months","$11M"]];
+const TM=[["Victor Hale","Founder & Chairman","Civil engineer · 34 yrs"],["Maria Santos","Chief Operating Officer","Project delivery · 22 yrs"],["Ahmed Rahimi","Head of Engineering","Chartered structural · 19 yrs"],["Grace Whitfield","Head of Safety","NEBOSH certified · 15 yrs"],["Lukas Berg","Chief Estimator","Quantity surveyor · 18 yrs"],["Tanya Obi","Design Director","Architect, RIBA · 16 yrs"]];
+const COL={Residential:["#f59e0b","#7c2d12"],Commercial:["#38bdf8","#1e3a8a"],Industrial:["#f97316","#3f3f46"],Infrastructure:["#84cc16","#1e293b"],Renovation:["#e879f9","#4c1d95"]};
+function art(n,k){const c=COL[k]||COL.Commercial;let r=n*9301%233,s=()=>(r=(r*49297+233)%233280)/233280,o="";let x=0;
+while(x<400){const w=34+s()*46,h=60+s()*(k=="Industrial"?50:150);o+=`<rect x="${x}" y="${220-h}" width="${w}" height="${h}" fill="#1b1d20" opacity="${.55+s()*.4}"/>`;for(let yy=220-h+8;yy<212;yy+=14)for(let xx=x+5;xx<x+w-8;xx+=11)if(s()>.45)o+=`<rect x="${xx}" y="${yy}" width="5" height="7" fill="#ffc400" opacity=".85"/>`;x+=w+3}
+return`<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g${n}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${c[0]}"/><stop offset="1" stop-color="${c[1]}"/></linearGradient></defs><rect width="400" height="300" fill="url(#g${n})"/><circle cx="${320-n*8}" cy="62" r="24" fill="#fff" opacity=".35"/>${o}<rect y="220" width="400" height="80" fill="#202327"/><path d="M${40+n*10} 220V70h70M${40+n*10} 90h60" stroke="#ffc400" stroke-width="5" fill="none"/></svg>`}
+$("nav").innerHTML=PG.map(p=>`<a href="#${p[0]}" data-p="${p[0]}">${p[1]}</a>`).join("");
+$("hs").innerHTML=SV.map((s,i)=>`<a class="card" href="#services" onclick="svc(${i})"><div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p></a>`).join("");
+function tile(p){return`<button class="gi" onclick="lbx(${PJ.indexOf(p)})">${art(p[2],p[1])}<span><small>${p[1]}</small>${p[0]}</span></button>`}
+$("feat").innerHTML=PJ.slice(0,3).map(tile).join("");
+function lbx(i){const p=PJ[i];$("lbc").innerHTML=art(p[2],p[1]).replace('<svg ','<svg style="aspect-ratio:4/3" ')+`<div class="in"><span style="color:var(--mu);font-size:12px;text-transform:uppercase;letter-spacing:1px">${p[1]}</span><h3 style="font-size:24px;margin:4px 0">${p[0]}</h3><div class="kv"><div><b>${p[3]}</b><small>Scale</small></div><div><b>${p[4]}</b><small>Duration</small></div><div><b>${p[5]}</b><small>Value</small></div></div><a class="btn" href="#quote" onclick="$('lb').classList.remove('open');F.type='${p[1]}'">Build something similar</a> <button class="btn g" onclick="$('lb').classList.remove('open')">Close</button></div>`;$("lb").classList.add("open")}
+function svc(i){$("stabs").innerHTML=SV.map((s,j)=>`<button class="tab ${j==i?"on":""}" onclick="svc(${j})">${s[0]}</button>`).join("");const s=SV[i];$("spane").innerHTML=`<div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p><br><a class="btn" href="#quote" onclick="F.type='${s[0]}'">Quote this service</a>`;$("tl").innerHTML=s[3].map((t,j)=>`<div><b>Phase ${j+1}</b><br>${t}</div>`).join("")}svc(0);
+let et=0,ef=1;const FIN=[["Standard",1],["Premium",1.35],["Luxury",1.8]];function est(){const a=+$("area").value,b=SV[et][4]||900;$("av").textContent=a.toLocaleString()+" m²";$("et").innerHTML=SV.slice(0,5).map((s,i)=>`<button class="tab ${i==et?"on":""}" onclick="et=${i};est()" style="color:#fff;border-color:#555">${s[0]}</button>`).join("");$("ef").innerHTML=FIN.map((f,i)=>`<button class="tab ${i==ef?"on":""}" onclick="ef=${i};est()" style="color:#fff;border-color:#555">${f[0]}</button>`).join("");const v=a*b*FIN[ef][1];$("ev").textContent=M(v*.9)+" – "+M(v*1.15);$("ed").textContent=`${SV[et][0]} · ${FIN[ef][0]} finish · approx. ${Math.round(a/60)+2} months`}est();
+let fl="All";function gal(){const c=["All",...new Set(PJ.map(p=>p[1]))];$("ftabs").innerHTML=c.map(x=>`<button class="tab ${x==fl?"on":""}" onclick="fl='${x}';gal()">${x}</button>`).join("");$("gal").innerHTML=PJ.filter(p=>fl=="All"||p[1]==fl).map(tile).join("")}gal();
+$("team").innerHTML=TM.map(t=>`<div class="card"><div class="av">${t[0].split(" ").map(x=>x[0]).join("")}</div><h3>${t[0]}</h3><p style="color:var(--yl);filter:brightness(.7);font-weight:700">${t[1]}</p><p style="margin-top:4px">${t[2]}</p></div>`).join("");
+const F={step:0,type:"",size:"",name:"",email:"",msg:""};
+function funnel(){$("bar").innerHTML=[0,1,2].map(i=>`<i class="${i<=F.step?"on":""}"></i>`).join("");let h="";
+if(F.step==0)h=`<b>1. What are you building?</b><br><br>`+SV.map(s=>`<button class="opt ${F.type==s[0]?"on":""}" onclick="F.type='${s[0]}';funnel()">${s[1]} ${s[0]}</button>`).join("")+`<button class="btn" onclick="nx()">Continue</button>`;
+if(F.step==1)h=`<b>2. Approximate budget</b><br><br>`+["Under $100K","$100K – $1M","$1M – $10M","$10M+"].map(s=>`<button class="opt ${F.size==s?"on":""}" onclick="F.size='${s}';funnel()">${s}</button>`).join("")+`<button class="btn g" onclick="F.step=0;funnel()">Back</button> <button class="btn" onclick="nx()">Continue</button>`;
+if(F.step==2)h=`<b>3. Your details</b><br><br><input id="fn" placeholder="Full name" value="${F.name}"><input id="fe" placeholder="Email or phone" value="${F.email}"><textarea id="fm" rows="3" placeholder="Site location & project notes">${F.msg}</textarea><button class="btn g" onclick="sv3();F.step=1;funnel()">Back</button> <button class="btn" onclick="sub()">Request my quote</button>`;
+if(F.step==3)h=`<div class="card"><h3>Quote requested ✓</h3><p>Thanks ${F.name}. We’ll contact you at ${F.email} within 48 hours to book a site visit for your ${F.type} project (${F.size}).</p></div>`;
+$("funnel").innerHTML=h}
+function nx(){if(F.step==0&&!F.type||F.step==1&&!F.size)return alert("Please choose an option.");F.step++;funnel()}
+function sv3(){F.name=$("fn").value;F.email=$("fe").value;F.msg=$("fm").value}
+function sub(){sv3();if(!F.name||!F.email)return alert("Name and contact are required.");F.step=3;funnel()}funnel();
+function lead(){$("mb").innerHTML=`<h3 style="margin:0 0 4px">Customize this template</h3><p style="color:var(--mu);margin:0 0 12px">Tell us about your business and we’ll get back to you.</p><input id="ln" placeholder="Your name"><input id="le" placeholder="Email or WhatsApp"><textarea id="lm" rows="3" placeholder="Business name & what you do"></textarea><button class="btn" style="width:100%" onclick="ls()">Request consultation</button><button class="btn g" style="width:100%;margin-top:8px" onclick="$('md').classList.remove('open')">Cancel</button>`;$("md").classList.add("open")}
+function ls(){$("mb").innerHTML=$("ln").value&&$("le").value?`<h3>Thanks, ${$("ln").value}! ✓</h3><p style="color:var(--mu)">Request noted. (Demo form — connect to email/WhatsApp/CRM before launch.)</p><button class="btn" style="width:100%" onclick="$('md').classList.remove('open')">Done</button>`:`<p>Please add your name and contact.</p><button class="btn" onclick="lead()">Back</button>`}
+function route(){const h=(location.hash||"#home").slice(1);const p=PG.some(x=>x[0]==h)?h:"home";document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id=="p-"+p));document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.p==p));window.scrollTo(0,0);if(p=="home")count()}
+function count(){document.querySelectorAll("[data-n]").forEach(e=>{const t=+e.dataset.n;let c=0;const id=setInterval(()=>{c+=Math.ceil(t/40);if(c>=t){c=t;clearInterval(id)}e.textContent=c.toLocaleString()},25)})}
+addEventListener("hashchange",route);route();
+</script><!-- fdi-branding -->
+<style>
+.fdi-by{margin-left:.55em;white-space:nowrap}
+.fdi-by a{font-weight:700}
+.fdi-foot{padding:14px 18px calc(14px + env(safe-area-inset-bottom,0px));text-align:center;font:600 12.5px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif;color:inherit;opacity:.92;border-top:1px solid rgba(128,128,128,.3)}
+.fdi-foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+</style>
+<script>
+(function(){
+var SITE='https://finessedigitalinnovations-domain.github.io/.com',NUM='2348133490442',EMAIL='finessedigitalinnovations@gmail.com',SHOW='+234 813 349 0442';
+var tname=(document.title.split(' \u2014 ')[0]||document.title).replace(' \u00b7 ',' ');
+var host,root,opener;
+var CSS=".bk{position:fixed;inset:0;background:rgba(5,10,25,.68);display:flex;align-items:center;justify-content:center;padding:16px;font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif}"
++".card{position:relative;background:#fff;color:#0A1330;width:min(440px,100%);max-height:92vh;overflow:auto;border-radius:16px;padding:24px;border-top:5px solid #14D87C;box-shadow:0 24px 60px rgba(0,0,0,.4)}"
++".x{position:absolute;right:10px;top:10px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(128,128,128,.18);color:inherit;font-size:20px;cursor:pointer}"
++".by{margin:0 0 4px;font-size:12.5px;font-weight:700;letter-spacing:.02em;color:#067A45}h2{margin:0 0 6px;font-size:1.45rem;line-height:1.15}.sub{margin:0 0 14px;font-size:.95rem;opacity:.8}"
++"label{display:block;font-weight:700;font-size:.9rem;margin:10px 0 4px}input,textarea{width:100%;box-sizing:border-box;font:inherit;color:inherit;background:#F4F7FC;border:1.5px solid #D3DCEE;border-radius:10px;padding:.65rem .8rem}input:focus,textarea:focus{outline:3px solid #0A57D6;outline-offset:1px}"
++".hint{min-height:1.3em;margin:8px 0 0;color:#B42318;font-size:.9rem}.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}"
++".p,.s{flex:1 1 150px;text-align:center;text-decoration:none;font-weight:700;padding:.75rem 1rem;border-radius:12px;border:2px solid #0A1330;color:#0A1330;cursor:pointer}.p{background:#14D87C;border-color:#14D87C;color:#052214}.p:hover{background:#0FC470}.s:hover{background:#0A1330;color:#fff}"
++".foot{margin:14px 0 0;text-align:center;font-size:.85rem;opacity:.8}.foot a{color:inherit}"
++"@media(prefers-color-scheme:dark){.card{background:#0E1733;color:#EAF0FF}input,textarea{background:#070D20;border-color:#2A3A6A}.by{color:#43E59A}.hint{color:#FF9B8F}.s{border-color:#EAF0FF;color:#EAF0FF}.s:hover{background:#EAF0FF;color:#0A1330}}";
+function build(){
+host=document.createElement('div');host.id='fdi-lead';host.style.cssText='position:fixed;inset:0;z-index:2147483000;display:none';
+root=host.attachShadow({mode:'open'});
+root.innerHTML='<style>'+CSS+'</style><div class="bk"><div class="card" role="dialog" aria-modal="true" aria-labelledby="t"><button class="x" type="button" aria-label="Close">\u00d7</button>'
++'<p class="by">Designed by Finesse Digital Innovations</p><h2 id="t">Customise this template</h2><p class="sub">Tell us about your business. Your message opens in WhatsApp, already written.</p>'
++'<label for="n">Your name</label><input id="n" autocomplete="name"><label for="b">Business name</label><input id="b" autocomplete="organization">'
++'<label for="m">Anything else? (optional)</label><textarea id="m" rows="3"></textarea><p class="hint" id="h" role="alert"></p>'
++'<div class="row"><a class="p" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="s" id="em">Send by email</a></div>'
++'<p class="foot"><a href="'+SITE+'" target="_blank" rel="noopener">Visit our website</a> \u00b7 '+SHOW+'</p></div></div>';
+document.body.appendChild(host);
+var g=function(id){return root.getElementById(id)};
+function v(id){return g(id).value.trim()}
+function msg(){var n=v('n'),b=v('b'),m=v('m');return 'Hello Finesse Digital Innovations,\n\nMy name is '+(n||'(your name)')+'.'+(b?'\nMy business: '+b+'.':'')+'\nI would like to customise the '+tname+' for my business.'+(m?'\n\n'+m:'')}
+function upd(){var m=msg();g('wa').href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m);g('em').href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Template enquiry: '+tname)+'&body='+encodeURIComponent(m)}
+function guard(e){if(!v('n')){e.preventDefault();g('h').textContent='Please add your name so we know who to reply to.';g('n').focus()}else g('h').textContent=''}
+root.addEventListener('input',function(){upd();if(v('n'))g('h').textContent=''});
+g('wa').addEventListener('click',guard);g('em').addEventListener('click',guard);
+root.querySelector('.x').addEventListener('click',close);
+root.querySelector('.bk').addEventListener('click',function(e){if(e.target.classList.contains('bk'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&host.style.display!=='none')close()});
+upd();}
+function open(){if(!host)build();opener=document.activeElement;host.style.display='block';setTimeout(function(){root.getElementById('n').focus()},30)}
+function close(){host.style.display='none';if(opener&&opener.focus)try{opener.focus()}catch(e){}}
+window.lead=open;
+})();
+</script>
+</body></html>

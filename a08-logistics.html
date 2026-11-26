@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>A8 · Logistics & Transportation Template — VectorFreight</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f2f5fa;--sf:#fff;--alt:#e4ebf6;--tx:#0a1b3d;--mu:#56668a;--bd:#d3dcee;--bl:#0a2a66;--bl2:#1347b8;--or:#ff6a13;--gn:#16a34a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#060e22;--sf:#0d1a38;--alt:#0a1530;--tx:#e9eefb;--mu:#8fa0c6;--bd:#1b2d5a;--bl:#050c1e;--bl2:#4f86ff;--or:#ff8a3d;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:120px}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif}
+a{color:inherit;text-decoration:none}.w{max-width:1070px;margin:auto;padding:0 18px}
+.ban{background:var(--or);color:#1b0b00;font-size:12px;font-weight:700;padding:7px 12px;text-align:center}.ban a{text-decoration:underline;cursor:pointer}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bl);color:#fff;z-index:10}
+nav .w{display:flex;align-items:center;justify-content:space-between;min-height:62px;padding-block:8px;gap:8px 10px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:20px;white-space:nowrap;line-height:1.2;font-style:italic;letter-spacing:-.5px;display:flex;align-items:center;gap:6px}.logo b{color:var(--or)}.logo i{font-style:normal}
+.links{display:flex;gap:2px;overflow-x:auto}.links a{padding:8px 12px;border-radius:8px;font-size:14px;font-weight:600;color:#aebcdf;white-space:nowrap}.links a.on{background:rgba(255,255,255,.14);color:#fff}
+.btn{display:inline-block;border:0;border-radius:10px;padding:12px 20px;font:inherit;font-weight:800;font-size:15px;cursor:pointer;background:var(--or);color:#1b0b00}.btn.b{background:var(--bl2);color:#fff}.btn.g{background:transparent;color:inherit;box-shadow:0 0 0 2px currentColor inset}
+.hero{background:linear-gradient(120deg,var(--bl) 40%,#103a8f);color:#fff;padding:52px 0 0;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 46px,rgba(255,255,255,.04) 46px 48px);pointer-events:none}
+.hero .w{position:relative}.hero small.k{color:var(--or);font-weight:800;letter-spacing:3px}.hero h1{font-size:clamp(34px,7vw,62px);line-height:1.04;margin:10px 0 14px;letter-spacing:-1.5px;max-width:720px;font-style:italic}.hero h1 em{color:var(--or)}.hero p{max-width:520px;color:#c5d1ee;margin:0 0 22px}
+.trk{background:var(--sf);color:var(--tx);border-radius:18px 18px 0 0;padding:18px;margin-top:32px;box-shadow:0 -10px 40px -12px rgba(0,0,0,.4)}.trk .r{display:flex;gap:8px}.trk input{flex:1;min-width:0}.trk small{color:var(--mu)}
+input[type=text],input:not([type]),textarea,select{width:100%;padding:13px;border:2px solid var(--bd);border-radius:12px;background:var(--bg);color:var(--tx);font:inherit}textarea{margin-top:8px}
+.ex{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;align-items:center}.ex button{border:1px dashed var(--bd);background:transparent;color:var(--bl2);padding:3px 10px;border-radius:99px;font:inherit;font-size:12.5px;cursor:pointer}
+.stats{display:grid;grid-template-columns:repeat(4,1fr)}.stats div{padding:22px 12px;text-align:center;border-right:1px solid var(--bd)}.stats div:last-child{border:0}.stats b{display:block;font-size:26px;color:var(--bl2)}.stats small{color:var(--mu)}
+section{padding:50px 0}section.alt{background:var(--alt)}h2{font-size:31px;margin:0 0 6px;letter-spacing:-.8px;font-style:italic}.sub{color:var(--mu);margin:0 0 24px;max-width:560px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:20px}.card h3{margin:6px 0;font-size:18px}.card p{margin:0;color:var(--mu);font-size:14.5px}.ic{width:46px;height:46px;border-radius:13px;background:var(--alt);display:flex;align-items:center;justify-content:center;font-size:23px}
+.tag{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--or)}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:14px}.tab{flex:none;border:2px solid var(--bd);background:var(--sf);color:var(--tx);padding:8px 15px;border-radius:10px;font:inherit;font-weight:700;font-size:14px;cursor:pointer}.tab.on{background:var(--bl2);color:#fff;border-color:var(--bl2)}
+.map{background:var(--bl);border-radius:16px;padding:10px;color:#fff}.map svg{width:100%;display:block}.pth{fill:none;stroke:#2b4a8f;stroke-width:4;stroke-dasharray:2 8;stroke-linecap:round}.pgp{fill:none;stroke:var(--or);stroke-width:4;stroke-linecap:round}
+.st{display:flex;gap:6px;margin:10px 0}.st span{flex:1;text-align:center;font-size:11px;font-weight:700;padding:6px 2px;border-radius:8px;background:var(--alt);color:var(--mu)}.st span.on{background:var(--or);color:#1b0b00}.st span.ok{background:var(--gn);color:#fff}
+.ev{border-left:3px solid var(--bd);margin-left:6px;padding:0 0 16px 16px;position:relative}.ev:before{content:"";position:absolute;left:-8px;top:2px;width:13px;height:13px;border-radius:50%;background:var(--bd)}.ev.on:before{background:var(--or);box-shadow:0 0 0 5px rgba(255,106,19,.25)}.ev.ok:before{background:var(--gn)}.ev b{display:block}.ev small{color:var(--mu)}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}.kv div{background:var(--alt);padding:10px;border-radius:12px;text-align:center}.kv b{display:block;font-size:15px}.kv small{color:var(--mu);font-size:11px;text-transform:uppercase}
+label.l{display:block;font-size:13px;font-weight:700;color:var(--mu);margin:12px 0 5px}input[type=range]{width:100%;accent-color:var(--or)}
+.tot{background:linear-gradient(135deg,var(--bl),#134aa8);color:#fff;border-radius:18px;padding:22px;position:sticky;top:130px}.tot b.p{font-size:42px;display:block;line-height:1.1}.tot .row{display:flex;justify-content:space-between;font-size:14px;padding:6px 0;border-top:1px solid rgba(255,255,255,.2)}
+.nm{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--bd)}.nm:last-child{border:0}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--gn);margin-right:6px}
+.av{width:56px;height:56px;border-radius:14px;background:var(--bl);color:var(--or);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;margin-bottom:8px}
+footer{background:var(--bl);color:#a9b8dc;padding:34px 0;font-size:14px}footer b{color:#fff}
+.fab{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;max-width:250px;background:var(--or);color:#1b0b00;border:0;border-radius:14px;padding:10px 14px;font:800 12.5px "Segoe UI",system-ui,sans-serif;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.4);cursor:pointer}
+.md{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:50;display:none;align-items:center;justify-content:center;padding:16px}.md.open{display:flex}.md>div{background:var(--sf);border-radius:18px;padding:20px;width:min(420px,100%)}.md input,.md textarea{margin-bottom:10px}
+.pg{display:none}.pg.on{display:block}
+@media(max-width:760px){.g3,.g2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--bd)}nav .btn{display:none}.logo{flex:1}.links{order:3;width:100%}.tot{position:static}.trk .r{flex-direction:column}}
+</style></head><body>
+<div class="ban">Logistics Template Demonstration — Click <a onclick="lead()">‘Customize for Your Business’</a> to make it yours. <span class="fdi-by">Designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a></span></div>
+<nav><div class="w"><a class="logo" href="#home"><i>🚚</i>Vector<b>Freight</b></a><div class="links" id="nav"></div><a class="btn" href="#quote">Get a Quote</a></div></nav>
+
+<div class="pg" id="p-home">
+<div class="hero"><div class="w"><small class="k">GLOBAL FREIGHT · LAST-MILE DELIVERY</small><h1>Moving the world, <em>on time.</em></h1><p>Road, air, sea and rail freight with real-time tracking, customs support and warehousing — all from one platform.</p>
+<div class="trk"><b>Track your shipment</b><div class="r" style="margin-top:8px"><input id="tq" placeholder="Enter tracking number, e.g. SH-48213"><button class="btn" onclick="go($('tq').value)">Track</button></div><div class="ex"><small>Try:</small><button onclick="go('SH-48213')">SH-48213</button><button onclick="go('SH-77010')">SH-77010</button><button onclick="go('SH-30555')">SH-30555</button></div></div></div></div>
+<div class="stats" style="background:var(--sf)"><div><b>180+</b><small>Destinations</small></div><div><b>2.4M</b><small>Shipments / year</small></div><div><b>99.2%</b><small>On-time delivery</small></div><div><b>24/7</b><small>Live support</small></div></div>
+<section><div class="w"><h2>Freight solutions</h2><p class="sub">Pick the mode that fits your timeline and budget.</p><div class="g3" id="hs"></div></div></section>
+<section class="alt"><div class="w"><h2>Built for supply chains</h2><div class="g3"><div class="card"><div class="ic">📡</div><h3>Live visibility</h3><p>GPS and scan events on every shipment.</p></div><div class="card"><div class="ic">🧾</div><h3>Customs handled</h3><p>Documentation, duties and clearance in-house.</p></div><div class="card"><div class="ic">🏬</div><h3>Smart warehousing</h3><p>Storage, pick-and-pack and cross-docking.</p></div></div></div></section>
+</div>
+
+<div class="pg" id="p-services"><section><div class="w"><h2>Services</h2><p class="sub">Tap a service for capacity, transit times and ideal cargo.</p><div class="tabs" id="stabs"></div><div class="card" id="spane"></div></div></section></div>
+
+<div class="pg" id="p-track"><section><div class="w"><h2>Shipment tracking</h2><p class="sub">Enter your tracking number for live status and route.</p><div style="display:flex;gap:8px;max-width:560px"><input id="tq2" placeholder="e.g. SH-48213" onkeydown="if(event.key=='Enter')go(this.value)"><button class="btn" onclick="go($('tq2').value)">Track</button></div><div class="ex"><small>Try:</small><button onclick="go('SH-48213')">SH-48213 · In transit</button><button onclick="go('SH-77010')">SH-77010 · Delivered</button><button onclick="go('SH-30555')">SH-30555 · Customs hold</button></div><div id="tres" style="margin-top:24px"></div></div></section></div>
+
+<div class="pg" id="p-quote"><section><div class="w"><h2>Instant freight quote</h2><p class="sub">Estimate cost and transit time, then submit your shipment request.</p><div class="g2"><div class="card" id="qf"></div><div id="qr"></div></div></div></section></div>
+
+<div class="pg" id="p-network"><section><div class="w"><h2>Network & fleet</h2><p class="sub">Hubs, fleet and the people behind your cargo.</p><div class="g2"><div class="card"><h3>Operations hubs</h3><div id="hubs"></div></div><div class="card"><h3>Fleet</h3><div class="kv" style="grid-template-columns:repeat(2,1fr)"><div><b>1,200</b><small>Trucks</small></div><div><b>38</b><small>Cargo aircraft</small></div><div><b>14</b><small>Vessels</small></div><div><b>95</b><small>Rail wagons</small></div></div><p style="margin-top:8px">All vehicles GPS-tracked, with temperature-controlled options for perishables and pharma.</p></div></div><br><div class="g3" id="team"></div></div></section></div>
+
+<footer><div class="w"><b>VectorFreight Logistics</b><br>1 Gateway Drive, Port District, Metro City · +1 555 050 9100 · ops@vectorfreight.example<br><br>© 2026 VectorFreight. Licensed freight forwarder.</div><div class="fdi-foot">Template designed by <a href="https://finessedigitalinnovations-domain.github.io/.com" target="_blank" rel="noopener">Finesse Digital Innovations</a> &middot; WhatsApp <a href="https://wa.me/2348133490442" target="_blank" rel="noopener">+234 813 349 0442</a></div></footer>
+<button class="fab" onclick="lead()">Love this layout? Click here to customize this template for your business.</button>
+<div class="md" id="md"><div id="mb"></div></div>
+
+<script>
+const $=id=>document.getElementById(id),M=n=>"$"+Math.round(n).toLocaleString("en-US");
+const PG=[["home","Home"],["services","Services"],["track","Track"],["quote","Quote"],["network","Network"]];
+const SV=[["Road Freight","🚛","Full and part loads with door-to-door delivery and live GPS.","Up to 28 t per trip","1–5 days","Retail, FMCG, construction"],["Air Freight","✈️","Fastest option for urgent and high-value cargo.","Up to 100 t per flight","1–3 days","Electronics, medical, fashion"],["Sea Freight","🚢","Cost-efficient FCL and LCL ocean shipping.","20ft / 40ft containers","14–35 days","Machinery, bulk goods"],["Rail Freight","🚆","Reliable, low-emission overland transport.","Up to 1,800 t per train","4–12 days","Commodities, automotive"],["Warehousing","🏬","Secure storage, pick & pack and cross-docking.","500,000 m² network","Same-day dispatch","E-commerce, distribution"],["Last-Mile","📦","Scheduled and same-day urban delivery.","Vans, bikes & lockers","2–24 hours","Parcels, groceries, documents"]];
+const NOW=Date.now(),H=36e5;const ts=h=>new Date(NOW+h*H).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
+const SHP={"SH-48213":{from:"Port Harbor",to:"Central City",mode:"Sea + Road",w:"1,240 kg",eta:ts(30),prog:.58,st:2,ev:[["Delivered","Central City",-1],["Out for delivery","Central City depot",-1],["Arrived at hub","North Hub",-6],["In transit","On route",-14],["Departed origin","Port Harbor",-42],["Picked up","Port Harbor warehouse",-58]]},
+"SH-77010":{from:"Metro Airport",to:"Lakeside",mode:"Air",w:"86 kg",eta:ts(-20),prog:1,st:4,ev:[["Delivered","Signed by R. Moore",-20],["Out for delivery","Lakeside depot",-24],["Arrived","Lakeside air cargo",-30],["Departed","Metro Airport",-38],["Picked up","Metro warehouse",-50]]},
+"SH-30555":{from:"Eastgate",to:"Harborview",mode:"Rail",w:"12,500 kg",eta:ts(72),prog:.4,st:2,hold:1,ev:[["Customs inspection — documents required","Border Terminal",-3],["Arrived at terminal","Border Terminal",-9],["In transit","Rail corridor 4",-40],["Departed origin","Eastgate rail yard",-70],["Picked up","Eastgate",-80]]}};
+const STG=["Picked up","In transit","At hub","Out for delivery","Delivered"];
+$("nav").innerHTML=PG.map(p=>`<a href="#${p[0]}" data-p="${p[0]}">${p[1]}</a>`).join("");
+$("hs").innerHTML=SV.map((s,i)=>`<a class="card" href="#services" onclick="svc(${i})"><div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p></a>`).join("");
+function svc(i){$("stabs").innerHTML=SV.map((s,j)=>`<button class="tab ${j==i?"on":""}" onclick="svc(${j})">${s[1]} ${s[0]}</button>`).join("");const s=SV[i];$("spane").innerHTML=`<div class="ic">${s[1]}</div><h3>${s[0]}</h3><p>${s[2]}</p><div class="kv"><div><b>${s[3]}</b><small>Capacity</small></div><div><b>${s[4]}</b><small>Transit</small></div><div><b>${s[5]}</b><small>Ideal for</small></div></div><a class="btn" href="#quote">Quote ${s[0]}</a>`}svc(0);
+function go(v){v=(v||"").trim().toUpperCase();location.hash="track";setTimeout(()=>track(v),30)}
+function track(v){$("tq2").value=v;const s=SHP[v];if(!s){$("tres").innerHTML=`<div class="card"><h3>No shipment found</h3><p>We couldn’t find “${v||"…"}”. Check the number or try one of the examples above.</p></div>`;return}
+const stat=s.hold?"Customs hold":s.st==4?"Delivered":"In transit",col=s.hold?"var(--or)":s.st==4?"var(--gn)":"var(--bl2)";
+$("tres").innerHTML=`<div class="g2"><div><div class="card"><span class="tag">${v}</span><h3 style="font-size:22px;color:${col}">${stat}</h3><p>${s.from} → ${s.to} · ${s.mode}</p><div class="st">${STG.map((x,i)=>`<span class="${i<s.st?"ok":i==s.st?"on":""}">${x}</span>`).join("")}</div><div class="kv"><div><b>${s.w}</b><small>Weight</small></div><div><b>${s.mode}</b><small>Mode</small></div><div><b>${s.st==4?"Delivered":s.eta}</b><small>${s.st==4?"Status":"ETA"}</small></div></div></div><br><div class="map"><svg viewBox="0 0 400 190"><path id="rp" class="pth" d="M40 150C110 150 100 50 200 80S300 140 360 40"/><path id="pg" class="pgp" d="M40 150"/><circle cx="40" cy="150" r="9" fill="#fff"/><circle cx="360" cy="40" r="9" fill="var(--or)"/><text x="40" y="177" font-size="11" fill="#c5d1ee" text-anchor="middle">${s.from}</text><text x="360" y="22" font-size="11" fill="#c5d1ee" text-anchor="middle">${s.to}</text><g id="tk"><circle r="13" fill="var(--or)"/><text y="5" font-size="14" text-anchor="middle">🚚</text></g></svg></div></div>
+<div class="card"><h3>Tracking history</h3><br>${s.ev.map((e,i)=>`<div class="ev ${i==0?(s.st==4?"ok":"on"):""}"><b>${e[0]}</b><small>${e[1]} · ${ts(e[2])}</small></div>`).join("")}${s.hold?`<p style="color:var(--or);font-weight:700">Action needed: upload a commercial invoice to release this shipment.</p>`:""}</div></div>`;
+const p=$("rp"),L=p.getTotalLength();let t=0;const id=setInterval(()=>{t+=.02;if(t>=s.prog){t=s.prog;clearInterval(id)}const pt=p.getPointAtLength(L*t);$("tk").setAttribute("transform",`translate(${pt.x},${pt.y})`);const g=$("pg");g.setAttribute("d",`M40 150`);const n=40;let d="M40 150";for(let i=1;i<=n;i++){const q=p.getPointAtLength(L*t*i/n);d+=`L${q.x} ${q.y}`}g.setAttribute("d",d)},20)}
+const Q={m:0,z1:0,z2:2,kg:500,ex:0,ins:0,done:0};const ZN=["Zone A – North","Zone B – Central","Zone C – East","Zone D – South","Zone E – Overseas"],RT=[[.9,1],[4.2,.35],[.35,2.2],[.6,1.4]];
+function quote(){const dist=Math.abs(Q.z1-Q.z2)+1,r=RT[Q.m];const base=Q.kg*r[0]*.2*dist+60,exp=Q.ex?base*.45:0,ins=Q.ins?base*.03+10:0,tot=base+exp+ins;const days=Math.max(1,Math.round(dist*(Q.m==1?.8:Q.m==2?6:Q.m==3?2.5:1.1)*(Q.ex?.6:1)));
+$("qf").innerHTML=`<label class="l">Mode</label><div class="tabs">${["🚛 Road","✈️ Air","🚢 Sea","🚆 Rail"].map((x,i)=>`<button class="tab ${i==Q.m?"on":""}" onclick="Q.m=${i};quote()">${x}</button>`).join("")}</div><label class="l">From</label><select onchange="Q.z1=+this.value;quote()">${ZN.map((z,i)=>`<option value="${i}" ${i==Q.z1?"selected":""}>${z}</option>`).join("")}</select><label class="l">To</label><select onchange="Q.z2=+this.value;quote()">${ZN.map((z,i)=>`<option value="${i}" ${i==Q.z2?"selected":""}>${z}</option>`).join("")}</select><label class="l">Weight: <b>${Q.kg.toLocaleString()} kg</b></label><input type="range" min="10" max="20000" step="10" value="${Q.kg}" oninput="Q.kg=+this.value;qs()"><label class="l">Options</label><div class="tabs"><button class="tab ${Q.ex?"on":""}" onclick="Q.ex=!Q.ex;quote()">⚡ Express +45%</button><button class="tab ${Q.ins?"on":""}" onclick="Q.ins=!Q.ins;quote()">🛡️ Insurance</button></div>`;
+$("qr").innerHTML=Q.done?`<div class="card" style="text-align:center"><div style="font-size:50px">✅</div><h3>Request submitted</h3><p>Reference <b>VF-${100000+Math.floor(Math.random()*899999)}</b>. A logistics specialist will confirm pickup within 2 hours.</p><br><button class="btn b" onclick="Q.done=0;quote()">New quote</button></div>`:`<div class="tot"><small>ESTIMATED COST</small><b class="p">${M(tot)}</b><small>Transit ≈ ${days} day${days>1?"s":""} · ${SV[Q.m][0]}</small><div style="margin-top:12px"><div class="row"><span>Freight</span><span>${M(base)}</span></div>${exp?`<div class="row"><span>Express</span><span>${M(exp)}</span></div>`:""}${ins?`<div class="row"><span>Insurance</span><span>${M(ins)}</span></div>`:""}</div><br><input id="qn" placeholder="Company / name" style="margin-bottom:8px"><input id="qe" placeholder="Email or phone" style="margin-bottom:10px"><button class="btn" style="width:100%" onclick="if(!$('qn').value||!$('qe').value)return alert('Please add your name and contact');Q.done=1;quote()">Request this shipment</button></div>`}
+function qs(){const k=$("qf").querySelector("b");if(k)k.textContent=Q.kg.toLocaleString()+" kg";const dist=Math.abs(Q.z1-Q.z2)+1,r=RT[Q.m],base=Q.kg*r[0]*.2*dist+60;const t=base+(Q.ex?base*.45:0)+(Q.ins?base*.03+10:0);const p=$("qr").querySelector("b.p");if(p)p.textContent=M(t)}quote();
+$("hubs").innerHTML=[["Port Harbor","Sea & road hub"],["Metro Airport","Air cargo terminal"],["North Hub","Sorting centre"],["Border Terminal","Customs & rail"],["Central City","Last-mile depot"]].map(h=>`<div class="nm"><span><i class="dot"></i><b>${h[0]}</b></span><small style="color:var(--mu)">${h[1]}</small></div>`).join("");
+$("team").innerHTML=[["Marcus Reid","Chief Executive","Logistics · 25 yrs"],["Lina Park","Head of Operations","Network planning · 16 yrs"],["Omar Haddad","Customs Director","Trade compliance · 18 yrs"]].map(t=>`<div class="card"><div class="av">${t[0].split(" ").map(x=>x[0]).join("")}</div><h3>${t[0]}</h3><span class="tag">${t[1]}</span><p style="margin-top:6px">${t[2]}</p></div>`).join("");
+function lead(){$("mb").innerHTML=`<h3 style="margin:0 0 4px">Customize this template</h3><p style="color:var(--mu);margin:0 0 12px">Tell us about your business and we’ll get back to you.</p><input id="ln" placeholder="Your name"><input id="le" placeholder="Email or WhatsApp"><textarea id="lm" rows="3" placeholder="Business name & what you do"></textarea><button class="btn" style="width:100%" onclick="ls()">Request consultation</button><button class="btn g" style="width:100%;margin-top:10px" onclick="$('md').classList.remove('open')">Cancel</button>`;$("md").classList.add("open")}
+function ls(){$("mb").innerHTML=$("ln").value&&$("le").value?`<h3>Thanks, ${$("ln").value}! ✓</h3><p style="color:var(--mu)">Request noted. (Demo form — connect to email/WhatsApp/CRM before launch.)</p><button class="btn" style="width:100%" onclick="$('md').classList.remove('open')">Done</button>`:`<p>Please add your name and contact.</p><button class="btn" onclick="lead()">Back</button>`}
+function route(){const h=(location.hash||"#home").slice(1);const p=PG.some(x=>x[0]==h)?h:"home";document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id=="p-"+p));document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.p==p));window.scrollTo(0,0)}
+addEventListener("hashchange",route);route();
+</script><!-- fdi-branding -->
+<style>
+.fdi-by{margin-left:.55em;white-space:nowrap}
+.fdi-by a{font-weight:700}
+.fdi-foot{padding:14px 18px calc(14px + env(safe-area-inset-bottom,0px));text-align:center;font:600 12.5px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif;color:inherit;opacity:.92;border-top:1px solid rgba(128,128,128,.3)}
+.fdi-foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+</style>
+<script>
+(function(){
+var SITE='https://finessedigitalinnovations-domain.github.io/.com',NUM='2348133490442',EMAIL='finessedigitalinnovations@gmail.com',SHOW='+234 813 349 0442';
+var tname=(document.title.split(' \u2014 ')[0]||document.title).replace(' \u00b7 ',' ');
+var host,root,opener;
+var CSS=".bk{position:fixed;inset:0;background:rgba(5,10,25,.68);display:flex;align-items:center;justify-content:center;padding:16px;font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif}"
++".card{position:relative;background:#fff;color:#0A1330;width:min(440px,100%);max-height:92vh;overflow:auto;border-radius:16px;padding:24px;border-top:5px solid #14D87C;box-shadow:0 24px 60px rgba(0,0,0,.4)}"
++".x{position:absolute;right:10px;top:10px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(128,128,128,.18);color:inherit;font-size:20px;cursor:pointer}"
++".by{margin:0 0 4px;font-size:12.5px;font-weight:700;letter-spacing:.02em;color:#067A45}h2{margin:0 0 6px;font-size:1.45rem;line-height:1.15}.sub{margin:0 0 14px;font-size:.95rem;opacity:.8}"
++"label{display:block;font-weight:700;font-size:.9rem;margin:10px 0 4px}input,textarea{width:100%;box-sizing:border-box;font:inherit;color:inherit;background:#F4F7FC;border:1.5px solid #D3DCEE;border-radius:10px;padding:.65rem .8rem}input:focus,textarea:focus{outline:3px solid #0A57D6;outline-offset:1px}"
++".hint{min-height:1.3em;margin:8px 0 0;color:#B42318;font-size:.9rem}.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}"
++".p,.s{flex:1 1 150px;text-align:center;text-decoration:none;font-weight:700;padding:.75rem 1rem;border-radius:12px;border:2px solid #0A1330;color:#0A1330;cursor:pointer}.p{background:#14D87C;border-color:#14D87C;color:#052214}.p:hover{background:#0FC470}.s:hover{background:#0A1330;color:#fff}"
++".foot{margin:14px 0 0;text-align:center;font-size:.85rem;opacity:.8}.foot a{color:inherit}"
++"@media(prefers-color-scheme:dark){.card{background:#0E1733;color:#EAF0FF}input,textarea{background:#070D20;border-color:#2A3A6A}.by{color:#43E59A}.hint{color:#FF9B8F}.s{border-color:#EAF0FF;color:#EAF0FF}.s:hover{background:#EAF0FF;color:#0A1330}}";
+function build(){
+host=document.createElement('div');host.id='fdi-lead';host.style.cssText='position:fixed;inset:0;z-index:2147483000;display:none';
+root=host.attachShadow({mode:'open'});
+root.innerHTML='<style>'+CSS+'</style><div class="bk"><div class="card" role="dialog" aria-modal="true" aria-labelledby="t"><button class="x" type="button" aria-label="Close">\u00d7</button>'
++'<p class="by">Designed by Finesse Digital Innovations</p><h2 id="t">Customise this template</h2><p class="sub">Tell us about your business. Your message opens in WhatsApp, already written.</p>'
++'<label for="n">Your name</label><input id="n" autocomplete="name"><label for="b">Business name</label><input id="b" autocomplete="organization">'
++'<label for="m">Anything else? (optional)</label><textarea id="m" rows="3"></textarea><p class="hint" id="h" role="alert"></p>'
++'<div class="row"><a class="p" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="s" id="em">Send by email</a></div>'
++'<p class="foot"><a href="'+SITE+'" target="_blank" rel="noopener">Visit our website</a> \u00b7 '+SHOW+'</p></div></div>';
+document.body.appendChild(host);
+var g=function(id){return root.getElementById(id)};
+function v(id){return g(id).value.trim()}
+function msg(){var n=v('n'),b=v('b'),m=v('m');return 'Hello Finesse Digital Innovations,\n\nMy name is '+(n||'(your name)')+'.'+(b?'\nMy business: '+b+'.':'')+'\nI would like to customise the '+tname+' for my business.'+(m?'\n\n'+m:'')}
+function upd(){var m=msg();g('wa').href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m);g('em').href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Template enquiry: '+tname)+'&body='+encodeURIComponent(m)}
+function guard(e){if(!v('n')){e.preventDefault();g('h').textContent='Please add your name so we know who to reply to.';g('n').focus()}else g('h').textContent=''}
+root.addEventListener('input',function(){upd();if(v('n'))g('h').textContent=''});
+g('wa').addEventListener('click',guard);g('em').addEventListener('click',guard);
+root.querySelector('.x').addEventListener('click',close);
+root.querySelector('.bk').addEventListener('click',function(e){if(e.target.classList.contains('bk'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&host.style.display!=='none')close()});
+upd();}
+function open(){if(!host)build();opener=document.activeElement;host.style.display='block';setTimeout(function(){root.getElementById('n').focus()},30)}
+function close(){host.style.display='none';if(opener&&opener.focus)try{opener.focus()}catch(e){}}
+window.lead=open;
+})();
+</script>
+</body></html>
